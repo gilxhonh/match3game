@@ -1,0 +1,156 @@
+default:
+  image: gdk-forge-game:node16
+
+# automatic on dev branch without merge request (to avoid duplicated launch of the job)
+# automatic on merge commit on master branch
+# automatic on merge request if not on master or dev branches
+.healthcheck: &healthcheck
+  rules:
+    - if: '$CI_COMMIT_REF_NAME == "dev" && $CI_MERGE_REQUEST_ID == null'
+      when: on_success
+    - if: '$CI_COMMIT_REF_NAME == "master" && $CI_COMMIT_MESSAGE =~ /Merge branch/'
+      when: on_success
+    - if: '$CI_COMMIT_REF_NAME != "dev" && $CI_COMMIT_REF_NAME != "master" && $CI_MERGE_REQUEST_ID != null'
+      when: on_success
+  tags:
+    - common
+
+# automatic on dev branch without merge request (to avoid duplicated launch of the job)
+.healthcheck-ci: &healthcheck-ci
+  rules:
+    - if: '$CI_COMMIT_REF_NAME == "dev" && $CI_MERGE_REQUEST_ID == null'
+      when: on_success
+  tags:
+    - common
+
+# manual on dev branch without merge request (to avoid duplicated launch of the job)
+# automatic on merge commit on master branch
+.predeliver: &predeliver
+  rules:
+    - if: '$CI_COMMIT_REF_NAME == "dev" && $CI_MERGE_REQUEST_ID == null'
+      when: manual
+    - if: '$CI_COMMIT_REF_NAME == "master" && $CI_COMMIT_MESSAGE =~ /Merge branch/'
+      when: on_success
+  tags:
+    - common
+  allow_failure: false
+
+# manual on merge commit on master branch
+.start-deliver: &start-deliver
+  rules:
+    - if: '$CI_COMMIT_REF_NAME == "master" && $CI_COMMIT_MESSAGE =~ /Merge branch/'
+      when: manual
+  tags:
+    - common
+  allow_failure: false
+
+# automatic on merge commit on master branch
+.deliver: &deliver
+  rules:
+    - if: '$CI_COMMIT_REF_NAME == "master" && $CI_COMMIT_MESSAGE =~ /Merge branch/'
+      when: on_success
+  tags:
+    - common
+
+stages:
+  - build
+  - healthcheck
+  - predelivery
+  - version
+  - release
+  - report
+
+cache:
+  key: $CI_COMMIT_REF_SLUG
+  paths:
+    - node_modules
+
+before_script:
+  - npm ci
+
+build:
+  <<: *healthcheck
+  stage: build
+  artifacts:
+    expire_in: 1 day
+    paths:
+      - build
+      - delivery
+  script:
+    - npm run build
+    - npm run pack
+
+lint:
+  <<: *healthcheck
+  stage: healthcheck
+  script:
+    - npm run lint
+
+external_libs:
+  <<: *healthcheck
+  stage: healthcheck
+  script:
+    - forge-game checkgameexternallibsv2
+
+ci:
+  <<: *healthcheck-ci
+  stage: healthcheck
+  dependencies:
+    - build
+  script:
+    - forge-game healthcheckci
+
+predelivery:
+  <<: *predeliver
+  stage: predelivery
+  dependencies:
+    - build
+  artifacts:
+    expire_in: 3 days
+    paths:
+      - build
+      - delivery-report.json
+  script:
+    - forge-game predeliveryv2
+
+version:
+  <<: *start-deliver
+  stage: version
+  dependencies:
+    - predelivery
+  artifacts:
+    expire_in: 1 days
+    paths:
+      - package.json
+      - delivery
+      - delivery-report.json
+  script:
+    - forge-game versionv2
+
+release:
+  <<: *deliver
+  stage: release
+  dependencies:
+    - version
+  artifacts:
+    paths:
+      - package.json
+      - delivery
+      - delivery-report.json
+    expire_in: 1 days
+  script:
+    - forge-game deliver
+
+report:
+  <<: *deliver
+  stage: report
+  dependencies:
+    - release
+  artifacts:
+    paths:
+      - delivery
+      - delivery-report.json
+      - "*.pdf"
+    expire_in: 1 week
+  script:
+    - forge-game notify

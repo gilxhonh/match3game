@@ -1,0 +1,130 @@
+{
+	"data": {
+		"name": "Splash",
+		"x": 0,
+		"y": 0,
+		"rotation": 0,
+		"scaleX": 1,
+		"scaleY": 1,
+		"pivot": {
+			"x": 0,
+			"y": 0
+		},
+		"dockingBounds": {
+			"width": 1024,
+			"height": 576
+		},
+		"resize": {
+			"resize": "fitContain"
+		},
+		"type": "Container",
+		"visible": false,
+		"alpha": 1,
+		"worldAlpha": 1,
+		"buttonMode": false,
+		"interactive": false,
+		"metadata": {
+			"doNotExport": false
+		},
+		"children": [
+			{
+				"name": "logo",
+				"rotation": 0,
+				"scaleX": 1,
+				"scaleY": 1,
+				"pivot": {
+					"x": 0,
+					"y": 0
+				},
+				"dockingBounds": {
+					"width": 500,
+					"height": 100
+				},
+				"docking": {
+					"dock": "centerAll",
+					"x": 0,
+					"y": -80,
+					"cancelPivot": true
+				},
+				"type": "Graphics",
+				"visible": true,
+				"alpha": 1,
+				"worldAlpha": 1,
+				"buttonMode": false,
+				"interactive": false,
+				"metadata": {
+					"doNotExport": false
+				},
+				"children": [
+					{
+						"name": "text",
+						"rotation": 0,
+						"scaleX": 1,
+						"scaleY": 1,
+						"pivot": {
+							"x": 250,
+							"y": 26.8125
+						},
+						"docking": {
+							"dock": "centerAll",
+							"x": 0,
+							"y": 0,
+							"cancelPivot": true
+						},
+						"type": "ui.TextField",
+						"visible": true,
+						"alpha": 1,
+						"worldAlpha": 1,
+						"buttonMode": false,
+						"interactive": false,
+						"metadata": {
+							"doNotExport": false
+						},
+						"children": [],
+						"text": "gameName",
+						"styles": {
+							"default": {
+								"fontName": "Arial",
+								"fontSize": 48,
+								"fill": "#000000"
+							}
+						},
+						"hitAreaLevel": 0,
+						"hitAreaPoint": {
+							"x": 0,
+							"y": 0
+						},
+						"width": 500,
+						"height": 0,
+						"options": {
+							"align": 2,
+							"padding": null,
+							"interLine": 0,
+							"wordWrap": true
+						},
+						"i18nKey": "gameName"
+					}
+				],
+				"graphicsDatas": [
+					{
+						"lineWidth": 0,
+						"lineColor": 0,
+						"fillColor": 16777215,
+						"fillAlpha": 1,
+						"fill": true,
+						"nativeLines": false,
+						"shape": {
+							"x": 0,
+							"y": 0,
+							"type": 1,
+							"width": 500,
+							"height": 100
+						}
+					}
+				]
+			}
+		],
+		"stateName": "splash",
+		"trackingName": ""
+	}
+}

@@ -1,0 +1,10 @@
+{
+	"gameName": "Match 3",
+	"home": {
+		"play": "PLAY",
+		"resume": "RESUME"
+	},
+	"reveal": {
+		"auto": "AUTO"
+	}
+}

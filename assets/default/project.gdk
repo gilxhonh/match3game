@@ -1,0 +1,26 @@
+{
+	"assets": {},
+	"metadata": {},
+	"editorVersion": "3.8.6",
+	"localizedAssets": {},
+	"filesList": [
+		"images/white.png",
+		"images/spritesheetGame-0.json",
+		"images/spritesheetGame-0.png",
+		"images/spritesheetGame-1.json",
+		"images/spritesheetGame-1.png",
+		"images/spritesheetGame-2.json",
+		"images/spritesheetGame-2.png",
+		"fonts/Mogra-Regular.ttf",
+		"fonts/RifficFree-Bold.woff",
+		"fonts/Roboto-Bold.ttf",
+		"fonts/tertre-xbol.ttf",
+		"fonts/tertre-xbol.woff",
+		"editor/stage/main.stage",
+		"editor/views/Splash.view",
+		"editor/views/Rules.view",
+		"editor/views/Home.view",
+		"editor/views/Reveal.view",
+		"editor/views/Result.view"
+	]
+}

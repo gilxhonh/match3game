@@ -1,0 +1,25 @@
+{
+	"compilerOptions": {
+		"strict": true,
+		"skipLibCheck": true,
+		"target": "es5",
+		"rootDir": ".",
+		"module": "commonjs",
+		"esModuleInterop": true,
+		"sourceMap": true,
+		"outDir": "./build",
+		"noUnusedLocals": true,
+		"experimentalDecorators": true,
+		"downlevelIteration": true,
+		"lib": [
+			"es5",
+			"es2015",
+			"dom",
+			"scripthost"
+		],
+		"types": [
+			"mocha"
+		]
+	},
+	"exclude": ["./node_modules", "./build"]
+}

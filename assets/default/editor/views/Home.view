@@ -1,0 +1,281 @@
+{
+	"data": {
+		"name": "Home",
+		"x": 0,
+		"y": 0,
+		"rotation": 0,
+		"scaleX": 1,
+		"scaleY": 1,
+		"pivot": {
+			"x": 0,
+			"y": 0
+		},
+		"dockingBounds": {
+			"width": 1024,
+			"height": 576
+		},
+		"resize": {
+			"resize": "fitContain"
+		},
+		"type": "Container",
+		"visible": false,
+		"alpha": 1,
+		"worldAlpha": 1,
+		"buttonMode": false,
+		"interactive": false,
+		"metadata": {
+			"doNotExport": false,
+			"alwaysVisible": false
+		},
+		"children": [
+			{
+				"name": "logo",
+				"rotation": 0,
+				"scaleX": 1,
+				"scaleY": 1,
+				"pivot": {
+					"x": 0,
+					"y": 0
+				},
+				"dockingBounds": {
+					"width": 500,
+					"height": 100
+				},
+				"docking": {
+					"dock": "centerAll",
+					"x": 0,
+					"y": -80,
+					"cancelPivot": true
+				},
+				"type": "Graphics",
+				"visible": true,
+				"alpha": 1,
+				"worldAlpha": 1,
+				"buttonMode": false,
+				"interactive": false,
+				"metadata": {
+					"doNotExport": false
+				},
+				"children": [
+					{
+						"name": "text",
+						"rotation": 0,
+						"scaleX": 1,
+						"scaleY": 1,
+						"pivot": {
+							"x": 250,
+							"y": 26.8125
+						},
+						"docking": {
+							"dock": "centerAll",
+							"x": 0,
+							"y": 0,
+							"cancelPivot": true
+						},
+						"type": "ui.TextField",
+						"visible": true,
+						"alpha": 1,
+						"worldAlpha": 1,
+						"buttonMode": false,
+						"interactive": false,
+						"metadata": {
+							"doNotExport": false
+						},
+						"children": [],
+						"text": "gameName",
+						"styles": {
+							"default": {
+								"fontName": "Arial",
+								"fontSize": 48,
+								"fill": "#000000"
+							}
+						},
+						"hitAreaLevel": 0,
+						"hitAreaPoint": {
+							"x": 0,
+							"y": 0
+						},
+						"width": 500,
+						"height": 0,
+						"options": {
+							"align": 2,
+							"padding": null,
+							"interLine": 0,
+							"wordWrap": true
+						},
+						"i18nKey": "gameName"
+					}
+				],
+				"graphicsDatas": [
+					{
+						"lineWidth": 0,
+						"lineColor": 0,
+						"fillColor": 16777215,
+						"fillAlpha": 1,
+						"fill": true,
+						"nativeLines": false,
+						"shape": {
+							"x": 0,
+							"y": 0,
+							"type": 1,
+							"width": 500,
+							"height": 100
+						}
+					}
+				]
+			},
+			{
+				"name": "playButton",
+				"rotation": 0,
+				"scaleX": 1,
+				"scaleY": 1,
+				"pivot": {
+					"x": 0,
+					"y": 0
+				},
+				"dockingBounds": {
+					"width": 320,
+					"height": 96
+				},
+				"docking": {
+					"dock": "centerAll",
+					"x": 0,
+					"y": 60,
+					"cancelPivot": true
+				},
+				"type": "ui.Button",
+				"visible": true,
+				"alpha": 1,
+				"worldAlpha": 1,
+				"buttonMode": true,
+				"interactive": true,
+				"metadata": {
+					"doNotExport": false
+				},
+				"children": [],
+				"text": "home.play",
+				"textStyle": {
+					"default": {
+						"fontName": "Arial",
+						"fill": "#000000",
+						"fontSize": 24
+					}
+				},
+				"background": {
+					"name": "Background",
+					"x": 0,
+					"y": 0,
+					"rotation": 0,
+					"scaleX": 1,
+					"scaleY": 1,
+					"pivot": {
+						"x": 0,
+						"y": 0
+					},
+					"type": "Sprite",
+					"visible": true,
+					"alpha": 1,
+					"worldAlpha": 1,
+					"buttonMode": false,
+					"interactive": false,
+					"metadata": {
+						"doNotExport": true
+					},
+					"children": [],
+					"sprite": {
+						"texture": {
+							"imageUrl": "btn_jouer_01"
+						}
+					}
+				},
+				"isNineSlice": false,
+				"nineSlicePadding": {
+					"x": 0,
+					"y": 0,
+					"type": 1,
+					"width": 0,
+					"height": 0
+				},
+				"nineSliceMinSize": {
+					"x": 0,
+					"y": 0
+				},
+				"style": {
+					"idleTexture": {
+						"imageUrl": "btn_jouer_00"
+					},
+					"overTexture": {
+						"imageUrl": "btn_jouer_01"
+					},
+					"clickedTexture": {
+						"imageUrl": "btn_jouer_02"
+					},
+					"disabledTexture": {
+						"imageUrl": "btn_jouer_02"
+					},
+					"textStates": {
+						"idle": {
+							"fill": "#ffffff",
+							"fontName": "tertre-xbol"
+						},
+						"hover": {
+							"fill": "#ffffff",
+							"fontName": "tertre-xbol"
+						}
+					}
+				},
+				"textfield": {
+					"name": "Label",
+					"rotation": 0,
+					"scaleX": 1,
+					"scaleY": 1,
+					"pivot": {
+						"x": 0,
+						"y": 0
+					},
+					"docking": {
+						"dock": "centerAll",
+						"x": 0,
+						"y": 0,
+						"cancelPivot": true
+					},
+					"type": "ui.TextField",
+					"visible": true,
+					"alpha": 1,
+					"worldAlpha": 1,
+					"buttonMode": false,
+					"interactive": false,
+					"metadata": {
+						"doNotExport": true
+					},
+					"children": [],
+					"text": "home.play",
+					"styles": {
+						"default": {
+							"fontName": "tertre-xbol",
+							"fill": "#ffffff",
+							"fontSize": 24
+						}
+					},
+					"hitAreaLevel": 0,
+					"hitAreaPoint": {
+						"x": 0,
+						"y": 0
+					},
+					"width": 0,
+					"height": 0,
+					"options": {
+						"align": 0,
+						"padding": null,
+						"interLine": 0,
+						"wordWrap": false
+					},
+					"i18nKey": "home.play"
+				},
+				"trackingName": ""
+			}
+		],
+		"stateName": "home",
+		"trackingName": ""
+	}
+}

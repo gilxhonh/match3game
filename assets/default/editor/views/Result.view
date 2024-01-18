@@ -1,0 +1,130 @@
+{
+	"data": {
+		"name": "Result",
+		"x": 0,
+		"y": 0,
+		"rotation": 0,
+		"scaleX": 1,
+		"scaleY": 1,
+		"pivot": {
+			"x": 0,
+			"y": 0
+		},
+		"dockingBounds": {
+			"width": 1024,
+			"height": 576
+		},
+		"resize": {
+			"resize": "fitContain"
+		},
+		"type": "Container",
+		"visible": false,
+		"alpha": 1,
+		"worldAlpha": 1,
+		"buttonMode": false,
+		"interactive": false,
+		"metadata": {
+			"doNotExport": false
+		},
+		"children": [
+			{
+				"name": "text",
+				"rotation": 0,
+				"scaleX": 1,
+				"scaleY": 1,
+				"pivot": {
+					"x": 0,
+					"y": 0
+				},
+				"docking": {
+					"dock": "centerAll",
+					"x": 0,
+					"y": -70,
+					"cancelPivot": true
+				},
+				"type": "ui.TextField",
+				"visible": true,
+				"alpha": 1,
+				"worldAlpha": 1,
+				"buttonMode": false,
+				"interactive": false,
+				"metadata": {
+					"doNotExport": false
+				},
+				"children": [],
+				"text": "you won",
+				"styles": {
+					"default": {
+						"fontName": "Arial",
+						"fontSize": 48,
+						"fill": "#000000"
+					}
+				},
+				"hitAreaLevel": 0,
+				"hitAreaPoint": {
+					"x": 0,
+					"y": 0
+				},
+				"width": 500,
+				"height": 0,
+				"options": {
+					"align": 2,
+					"padding": null,
+					"interLine": 0,
+					"wordWrap": true
+				},
+				"i18nKey": null
+			},
+			{
+				"name": "amount",
+				"rotation": 0,
+				"scaleX": 1,
+				"scaleY": 1,
+				"pivot": {
+					"x": 0,
+					"y": 0
+				},
+				"docking": {
+					"dock": "centerAll",
+					"x": 0,
+					"y": 0,
+					"cancelPivot": true
+				},
+				"type": "ui.TextField",
+				"visible": true,
+				"alpha": 1,
+				"worldAlpha": 1,
+				"buttonMode": false,
+				"interactive": false,
+				"metadata": {
+					"doNotExport": false
+				},
+				"children": [],
+				"text": "$1.000",
+				"styles": {
+					"default": {
+						"fontName": "Arial",
+						"fontSize": 48,
+						"fill": "#000000"
+					}
+				},
+				"hitAreaLevel": 0,
+				"hitAreaPoint": {
+					"x": 0,
+					"y": 0
+				},
+				"width": 500,
+				"height": 0,
+				"options": {
+					"align": 2,
+					"padding": null,
+					"interLine": 0,
+					"wordWrap": true
+				},
+				"i18nKey": null
+			}
+		],
+		"stateName": "result",
+		"trackingName": ""
+	}
+}

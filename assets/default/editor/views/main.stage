@@ -1,0 +1,56 @@
+{
+	"type": "stage",
+	"data": {
+		"type": "Container",
+		"name": "MainStage",
+		"visible": true,
+		"alpha": 1,
+		"worldAlpha": 1,
+		"buttonMode": false,
+		"interactive": false,
+		"x": 0,
+		"y": 0,
+		"rotation": 0,
+		"scaleX": 1,
+		"scaleY": 1,
+		"pivot": {
+			"x": 0,
+			"y": 0
+		},
+		"children": [
+			{
+				"type": "Sprite",
+				"name": "background",
+				"visible": true,
+				"alpha": 1,
+				"worldAlpha": 1,
+				"buttonMode": false,
+				"interactive": false,
+				"rotation": 0,
+				"scaleX": 1.1630859375,
+				"scaleY": 1.1630859375,
+				"pivot": {
+					"x": 0,
+					"y": 0
+				},
+				"docking": {
+					"dock": "centerAll",
+					"x": 0,
+					"y": 0,
+					"cancelPivot": true
+				},
+				"resize": {
+					"resize": "cover"
+				},
+				"children": [],
+				"metadata": {},
+				"sprite": {
+					"texture": {
+						"imageUrl": "bg.jpg"
+					}
+				}
+			}
+		],
+		"metadata": {}
+	}
+}

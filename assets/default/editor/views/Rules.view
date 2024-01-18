@@ -1,0 +1,33 @@
+{
+	"data": {
+		"name": "Rules",
+		"x": 0,
+		"y": 0,
+		"rotation": 0,
+		"scaleX": 1,
+		"scaleY": 1,
+		"pivot": {
+			"x": 0,
+			"y": 0
+		},
+		"dockingBounds": {
+			"width": 1024,
+			"height": 576
+		},
+		"resize": {
+			"resize": "fitContain"
+		},
+		"type": "Container",
+		"visible": false,
+		"alpha": 1,
+		"worldAlpha": 1,
+		"buttonMode": false,
+		"interactive": false,
+		"metadata": {
+			"doNotExport": false
+		},
+		"children": [],
+		"stateName": "rules",
+		"trackingName": ""
+	}
+}

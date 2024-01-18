@@ -1,0 +1,35 @@
+{
+	"productName": "game-itg",
+    "masterGameCode": "game-itg",
+    "code": "game-itg",
+	"description": "game-itg dealer",
+	"schemaVersion": 3,
+    "productVersion": "1.0.0",
+    "version": 1,
+    "date": 1684936346271,
+    "renewal": 0,
+    "baseStake": 100,
+	"ranks": [
+        {
+            "id": 1,
+            "factor": { "numerator": 1000, "denominator": 1 },
+            "tickets": [
+                { "id": 1, "symbol": "A,A,A", "quantity": 1 }
+            ]
+        },
+        {
+            "id": 2,
+            "factor": { "numerator": 1, "denominator": 1 },
+            "tickets": [
+                { "id": 2, "symbol": "B,B,B", "quantity": 1 }
+            ]
+        },
+        {
+            "id": 3,
+            "factor": { "numerator": 0, "denominator": 1 },
+            "tickets": [
+                { "id": 3, "symbol": "B,A,B", "quantity": 1 }
+            ]
+        }
+    ]
+}

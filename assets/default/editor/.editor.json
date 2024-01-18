@@ -1,0 +1,269 @@
+{
+	"toolsStates": [
+		{
+			"id": "GAME-TOOL",
+			"state": {}
+		},
+		{
+			"id": "CONTAINER-TOOL",
+			"state": {
+				"Common": {
+					"closed": false,
+					"children": {},
+					"controllers": null
+				},
+				"Alpha": {
+					"closed": false,
+					"children": {},
+					"controllers": null
+				},
+				"Interaction": {
+					"closed": false,
+					"children": {},
+					"controllers": null
+				},
+				"Sprite": {
+					"closed": false,
+					"children": {
+						"Texture": {
+							"closed": false,
+							"children": {},
+							"controllers": null
+						}
+					},
+					"controllers": null
+				},
+				"Transform": {
+					"closed": false,
+					"children": {
+						"Docking": {
+							"closed": false,
+							"children": {},
+							"controllers": null
+						},
+						"Position": {
+							"closed": false,
+							"children": {},
+							"controllers": null
+						},
+						"Rotation": {
+							"closed": false,
+							"children": {},
+							"controllers": null
+						},
+						"Scale": {
+							"closed": false,
+							"children": {},
+							"controllers": null
+						},
+						"Pivot": {
+							"closed": false,
+							"children": {},
+							"controllers": null
+						}
+					},
+					"controllers": null
+				},
+				"Resize": {
+					"closed": false,
+					"children": {},
+					"controllers": null
+				},
+				"Viewport": {
+					"closed": false,
+					"children": {},
+					"controllers": null
+				}
+			}
+		},
+		{
+			"id": "GRAPHICS-TOOL",
+			"state": {}
+		},
+		{
+			"id": "TILING-SPRITE-TOOL",
+			"state": {}
+		},
+		{
+			"id": "NINE-SLICE-PLANE-TOOL",
+			"state": {}
+		},
+		{
+			"id": "TIMELINE-TOOL",
+			"state": {}
+		},
+		{
+			"id": "BUTTON-TOOL",
+			"state": {
+				"Misc.": {
+					"closed": false,
+					"children": {},
+					"controllers": null
+				},
+				"Textures": {
+					"closed": false,
+					"children": {
+						"Idle Texture": {
+							"closed": false,
+							"children": {},
+							"controllers": null
+						},
+						"Over Texture": {
+							"closed": false,
+							"children": {},
+							"controllers": null
+						},
+						"Clicked Texture": {
+							"closed": false,
+							"children": {},
+							"controllers": null
+						},
+						"Disabled Texture": {
+							"closed": false,
+							"children": {},
+							"controllers": null
+						}
+					},
+					"controllers": null
+				},
+				"Text": {
+					"closed": false,
+					"children": {},
+					"controllers": null
+				}
+			}
+		},
+		{
+			"id": "TEXTFIELD-TOOL",
+			"state": {
+				"Options": {
+					"closed": false,
+					"children": {},
+					"controllers": null
+				},
+				"Padding": {
+					"closed": false,
+					"children": {},
+					"controllers": null
+				},
+				"Styles": {
+					"closed": false,
+					"children": {},
+					"controllers": null
+				},
+				"default": {
+					"closed": false,
+					"children": {
+						"Common": {
+							"closed": false,
+							"children": {
+								"Fill": {
+									"closed": false,
+									"children": {},
+									"controllers": null
+								}
+							},
+							"controllers": null
+						},
+						"Stroke": {
+							"closed": false,
+							"children": {
+								"Stroke": {
+									"closed": false,
+									"children": {},
+									"controllers": null
+								}
+							},
+							"controllers": null
+						},
+						"Shadows": {
+							"closed": false,
+							"children": {
+								"Shadow Color": {
+									"closed": false,
+									"children": {},
+									"controllers": null
+								}
+							},
+							"controllers": null
+						}
+					},
+					"controllers": null
+				}
+			}
+		},
+		{
+			"id": "POPUP-TOOL",
+			"state": {}
+		},
+		{
+			"id": "SCROLL-CONTAINER-TOOL",
+			"state": {}
+		},
+		{
+			"id": "SCROLL-CONTAINER2-TOOL",
+			"state": {}
+		},
+		{
+			"id": "SCRATCH-TOOL",
+			"state": {}
+		},
+		{
+			"id": "SCRATCH2-TOOL",
+			"state": {
+				"Common": {
+					"closed": false,
+					"children": {},
+					"controllers": null
+				},
+				"Options": {
+					"closed": false,
+					"children": {},
+					"controllers": null
+				}
+			}
+		},
+		{
+			"id": "NINE-SLICE-CONTAINER-TOOL",
+			"state": {}
+		},
+		{
+			"id": "SCROLL-BAR2-TOOL",
+			"state": {}
+		},
+		{
+			"id": "RULES-TOOL",
+			"state": {}
+		},
+		{
+			"id": "SLIDE-TOOL",
+			"state": {
+				"Common": {
+					"closed": false,
+					"children": {},
+					"controllers": null
+				}
+			}
+		},
+		{
+			"id": "SPINE-LOGO-TOOL",
+			"state": {}
+		},
+		{
+			"id": "SPINE-BUTTON-TOOL",
+			"state": {}
+		},
+		{
+			"id": "SPINE-TIMELINE-TOOL",
+			"state": {}
+		},
+		{
+			"id": "SPINE-TIMELINE-LOGO-TOOL",
+			"state": {}
+		},
+		{
+			"id": "SPINE-TIMELINE-BUTTON-TOOL",
+			"state": {}
+		}
+	]
+}

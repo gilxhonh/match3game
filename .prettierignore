@@ -1,0 +1,5 @@
+croupier
+assets
+.build
+
+**/*.min.js

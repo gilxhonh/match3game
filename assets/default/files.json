@@ -1,0 +1,11 @@
+{
+	"project": "project.json",
+	"white.png": "images/white.png",
+	"spritesheetGame-0.json": "images/spritesheetGame-0.json",
+	"spritesheetGame-1.json": "images/spritesheetGame-1.json",
+	"spritesheetGame-2.json": "images/spritesheetGame-2.json",
+	"Mogra-Regular": "fonts/Mogra-Regular.ttf",
+	"RifficFree-Bold": "fonts/RifficFree-Bold.woff",
+	"Roboto-Bold": "fonts/Roboto-Bold.ttf",
+	"tertre-xbol": "fonts/tertre-xbol.woff"
+}

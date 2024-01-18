@@ -1,0 +1,10 @@
+{
+	"ignore": false,
+	"notification": {
+		"predeliveryMailRecipients": ["dgf-team@fdj-gs.com"],
+		"mailRecipients": [
+			"dgf-team@fdj-gs.com",
+			"qa_nt@fdj-gs.com"
+		]
+	}
+}

@@ -1,0 +1,538 @@
+{
+	"data": {
+		"name": "Reveal",
+		"x": 0,
+		"y": 0,
+		"rotation": 0,
+		"scaleX": 1,
+		"scaleY": 1,
+		"pivot": {
+			"x": 0,
+			"y": 0
+		},
+		"dockingBounds": {
+			"width": 1024,
+			"height": 576
+		},
+		"resize": {
+			"resize": "fitContain"
+		},
+		"type": "Container",
+		"visible": false,
+		"alpha": 1,
+		"worldAlpha": 1,
+		"buttonMode": false,
+		"interactive": false,
+		"metadata": {
+			"doNotExport": false
+		},
+		"children": [
+			{
+				"name": "autoButton",
+				"rotation": 0,
+				"scaleX": 1,
+				"scaleY": 1,
+				"pivot": {
+					"x": 0,
+					"y": 0
+				},
+				"dockingBounds": {
+					"width": 170,
+					"height": 50
+				},
+				"docking": {
+					"dock": "centerAll",
+					"x": 0,
+					"y": 200,
+					"cancelPivot": true
+				},
+				"type": "ui.Button",
+				"visible": true,
+				"alpha": 1,
+				"worldAlpha": 1,
+				"buttonMode": true,
+				"interactive": true,
+				"metadata": {
+					"doNotExport": false
+				},
+				"children": [],
+				"text": "reveal.auto",
+				"textStyle": {
+					"default": {
+						"fontName": "Arial",
+						"fill": "#000000",
+						"fontSize": 24
+					}
+				},
+				"background": {
+					"name": "Background",
+					"x": 0,
+					"y": 0,
+					"rotation": 0,
+					"scaleX": 17,
+					"scaleY": 5,
+					"pivot": {
+						"x": 0,
+						"y": 0
+					},
+					"type": "Sprite",
+					"visible": true,
+					"alpha": 1,
+					"worldAlpha": 1,
+					"buttonMode": false,
+					"interactive": false,
+					"metadata": {
+						"doNotExport": true
+					},
+					"children": [],
+					"sprite": {
+						"texture": {
+							"imageUrl": "white.png"
+						}
+					}
+				},
+				"isNineSlice": false,
+				"nineSlicePadding": {
+					"x": 0,
+					"y": 0,
+					"type": 1,
+					"width": 0,
+					"height": 0
+				},
+				"nineSliceMinSize": {
+					"x": 0,
+					"y": 0
+				},
+				"style": {
+					"idleTexture": {
+						"imageUrl": "white.png"
+					},
+					"overTexture": {
+						"imageUrl": "white.png"
+					},
+					"clickedTexture": {
+						"imageUrl": "white.png"
+					},
+					"disabledTexture": {
+						"imageUrl": "white.png"
+					},
+					"textStates": {
+						"idle": {
+							"fill": "#333333"
+						},
+						"hover": {
+							"fill": "#000000"
+						},
+						"disabled": {
+							"fill": "#777777"
+						}
+					}
+				},
+				"textfield": {
+					"name": "Label",
+					"rotation": 0,
+					"scaleX": 1,
+					"scaleY": 1,
+					"pivot": {
+						"x": 0,
+						"y": 0
+					},
+					"docking": {
+						"dock": "centerAll",
+						"x": 0,
+						"y": 0,
+						"cancelPivot": true
+					},
+					"type": "ui.TextField",
+					"visible": true,
+					"alpha": 1,
+					"worldAlpha": 1,
+					"buttonMode": false,
+					"interactive": false,
+					"metadata": {
+						"doNotExport": true
+					},
+					"children": [],
+					"text": "reveal.auto",
+					"styles": {
+						"default": {
+							"fontName": "Arial",
+							"fill": "#333333",
+							"fontSize": 24
+						}
+					},
+					"hitAreaLevel": 0,
+					"hitAreaPoint": {
+						"x": 0,
+						"y": 0
+					},
+					"width": 0,
+					"height": 0,
+					"options": {
+						"align": 0,
+						"padding": null,
+						"wordWrap": false
+					},
+					"i18nKey": "reveal.auto"
+				},
+				"trackingName": ""
+			},
+			{
+				"name": "cell1",
+				"rotation": 0,
+				"scaleX": 1,
+				"scaleY": 1,
+				"pivot": {
+					"x": 0,
+					"y": 0
+				},
+				"dockingBounds": {
+					"width": 100,
+					"height": 100
+				},
+				"docking": {
+					"dock": "centerAll",
+					"x": -140,
+					"y": 0,
+					"cancelPivot": true
+				},
+				"type": "Container",
+				"visible": true,
+				"alpha": 1,
+				"worldAlpha": 1,
+				"buttonMode": false,
+				"interactive": false,
+				"metadata": {
+					"doNotExport": false
+				},
+				"children": [
+					{
+						"name": "cell1",
+						"x": 0,
+						"y": 0,
+						"rotation": 0,
+						"scaleX": 1,
+						"scaleY": 1,
+						"pivot": {
+							"x": 0,
+							"y": 0
+						},
+						"type": "Graphics",
+						"visible": true,
+						"alpha": 1,
+						"worldAlpha": 1,
+						"buttonMode": false,
+						"interactive": false,
+						"metadata": {
+							"doNotExport": false
+						},
+						"children": [],
+						"graphicsDatas": [
+							{
+								"lineWidth": 0,
+								"lineColor": 0,
+								"fillColor": 16777215,
+								"fillAlpha": 1,
+								"fill": true,
+								"nativeLines": false,
+								"shape": {
+									"x": 0,
+									"y": 0,
+									"type": 1,
+									"width": 100,
+									"height": 100
+								}
+							}
+						]
+					},
+					{
+						"name": "amount",
+						"rotation": 0,
+						"scaleX": 1,
+						"scaleY": 1,
+						"pivot": {
+							"x": 0,
+							"y": 0
+						},
+						"docking": {
+							"dock": "centerAll",
+							"x": 0,
+							"y": 0,
+							"cancelPivot": true
+						},
+						"type": "ui.TextField",
+						"visible": true,
+						"alpha": 1,
+						"worldAlpha": 1,
+						"buttonMode": false,
+						"interactive": false,
+						"metadata": {
+							"doNotExport": false
+						},
+						"children": [],
+						"text": "$1.000",
+						"styles": {
+							"default": {
+								"fontName": "Arial",
+								"fontSize": 20,
+								"fill": "#000000"
+							}
+						},
+						"hitAreaLevel": 0,
+						"hitAreaPoint": {
+							"x": 0,
+							"y": 0
+						},
+						"width": 100,
+						"height": 0,
+						"options": {
+							"align": 2,
+							"padding": null,
+							"interLine": 0,
+							"wordWrap": true
+						},
+						"i18nKey": null
+					}
+				]
+			},
+			{
+				"name": "cell2",
+				"rotation": 0,
+				"scaleX": 1,
+				"scaleY": 1,
+				"pivot": {
+					"x": 0,
+					"y": 0
+				},
+				"dockingBounds": {
+					"width": 100,
+					"height": 100
+				},
+				"docking": {
+					"dock": "centerAll",
+					"x": 0,
+					"y": 0,
+					"cancelPivot": true
+				},
+				"type": "Container",
+				"visible": true,
+				"alpha": 1,
+				"worldAlpha": 1,
+				"buttonMode": false,
+				"interactive": false,
+				"metadata": {
+					"doNotExport": false
+				},
+				"children": [
+					{
+						"name": "cell1",
+						"x": 0,
+						"y": 0,
+						"rotation": 0,
+						"scaleX": 1,
+						"scaleY": 1,
+						"pivot": {
+							"x": 0,
+							"y": 0
+						},
+						"type": "Graphics",
+						"visible": true,
+						"alpha": 1,
+						"worldAlpha": 1,
+						"buttonMode": false,
+						"interactive": false,
+						"metadata": {
+							"doNotExport": false
+						},
+						"children": [],
+						"graphicsDatas": [
+							{
+								"lineWidth": 0,
+								"lineColor": 0,
+								"fillColor": 16777215,
+								"fillAlpha": 1,
+								"fill": true,
+								"nativeLines": false,
+								"shape": {
+									"x": 0,
+									"y": 0,
+									"type": 1,
+									"width": 100,
+									"height": 100
+								}
+							}
+						]
+					},
+					{
+						"name": "amount",
+						"rotation": 0,
+						"scaleX": 1,
+						"scaleY": 1,
+						"pivot": {
+							"x": 0,
+							"y": 0
+						},
+						"docking": {
+							"dock": "centerAll",
+							"x": 0,
+							"y": 0,
+							"cancelPivot": true
+						},
+						"type": "ui.TextField",
+						"visible": true,
+						"alpha": 1,
+						"worldAlpha": 1,
+						"buttonMode": false,
+						"interactive": false,
+						"metadata": {
+							"doNotExport": false
+						},
+						"children": [],
+						"text": "$1.000",
+						"styles": {
+							"default": {
+								"fontName": "Arial",
+								"fontSize": 20,
+								"fill": "#000000"
+							}
+						},
+						"hitAreaLevel": 0,
+						"hitAreaPoint": {
+							"x": 0,
+							"y": 0
+						},
+						"width": 100,
+						"height": 0,
+						"options": {
+							"align": 2,
+							"padding": null,
+							"interLine": 0,
+							"wordWrap": true
+						},
+						"i18nKey": null
+					}
+				]
+			},
+			{
+				"name": "cell3",
+				"rotation": 0,
+				"scaleX": 1,
+				"scaleY": 1,
+				"pivot": {
+					"x": 0,
+					"y": 0
+				},
+				"dockingBounds": {
+					"width": 100,
+					"height": 100
+				},
+				"docking": {
+					"dock": "centerAll",
+					"x": 140,
+					"y": 0,
+					"cancelPivot": true
+				},
+				"type": "Container",
+				"visible": true,
+				"alpha": 1,
+				"worldAlpha": 1,
+				"buttonMode": false,
+				"interactive": false,
+				"metadata": {
+					"doNotExport": false
+				},
+				"children": [
+					{
+						"name": "cell1",
+						"x": 0,
+						"y": 0,
+						"rotation": 0,
+						"scaleX": 1,
+						"scaleY": 1,
+						"pivot": {
+							"x": 0,
+							"y": 0
+						},
+						"type": "Graphics",
+						"visible": true,
+						"alpha": 1,
+						"worldAlpha": 1,
+						"buttonMode": false,
+						"interactive": false,
+						"metadata": {
+							"doNotExport": false
+						},
+						"children": [],
+						"graphicsDatas": [
+							{
+								"lineWidth": 0,
+								"lineColor": 0,
+								"fillColor": 16777215,
+								"fillAlpha": 1,
+								"fill": true,
+								"nativeLines": false,
+								"shape": {
+									"x": 0,
+									"y": 0,
+									"type": 1,
+									"width": 100,
+									"height": 100
+								}
+							}
+						]
+					},
+					{
+						"name": "amount",
+						"rotation": 0,
+						"scaleX": 1,
+						"scaleY": 1,
+						"pivot": {
+							"x": 0,
+							"y": 0
+						},
+						"docking": {
+							"dock": "centerAll",
+							"x": 0,
+							"y": 0,
+							"cancelPivot": true
+						},
+						"type": "ui.TextField",
+						"visible": true,
+						"alpha": 1,
+						"worldAlpha": 1,
+						"buttonMode": false,
+						"interactive": false,
+						"metadata": {
+							"doNotExport": false
+						},
+						"children": [],
+						"text": "$1.000",
+						"styles": {
+							"default": {
+								"fontName": "Arial",
+								"fontSize": 20,
+								"fill": "#000000"
+							}
+						},
+						"hitAreaLevel": 0,
+						"hitAreaPoint": {
+							"x": 0,
+							"y": 0
+						},
+						"width": 100,
+						"height": 0,
+						"options": {
+							"align": 2,
+							"padding": null,
+							"interLine": 0,
+							"wordWrap": true
+						},
+						"i18nKey": null
+					}
+				]
+			}
+		],
+		"stateName": "reveal",
+		"trackingName": ""
+	}
+}

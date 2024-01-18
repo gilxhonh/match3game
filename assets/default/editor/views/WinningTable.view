@@ -1,0 +1,327 @@
+{
+	"data": {
+		"name": "WinningTable",
+		"x": 0,
+		"y": 0,
+		"rotation": 0,
+		"scaleX": 0.5048828125,
+		"scaleY": 0.5048828125,
+		"pivot": {
+			"x": 0,
+			"y": 0
+		},
+		"dockingBounds": {
+			"width": 768,
+			"height": 1024
+		},
+		"resize": {
+			"resize": "fitContain"
+		},
+		"type": "Container",
+		"visible": false,
+		"alpha": 1,
+		"worldAlpha": 1,
+		"buttonMode": false,
+		"interactive": false,
+		"metadata": {
+			"viewFileName": "winningTable.ts",
+			"doNotExport": false
+		},
+		"children": [
+			{
+				"name": "popup",
+				"rotation": 0,
+				"scaleX": 1,
+				"scaleY": 1,
+				"pivot": {
+					"x": 0,
+					"y": 0
+				},
+				"dockingBounds": {
+					"width": 646,
+					"height": 920
+				},
+				"docking": {
+					"dock": "centerAll",
+					"x": 0,
+					"y": 0,
+					"cancelPivot": true
+				},
+				"type": "ui.Popup",
+				"visible": true,
+				"alpha": 1,
+				"worldAlpha": 1,
+				"buttonMode": false,
+				"interactive": false,
+				"metadata": {
+					"doNotExport": false
+				},
+				"children": [
+					{
+						"name": "title",
+						"rotation": 0,
+						"scaleX": 1,
+						"scaleY": 1,
+						"pivot": {
+							"x": 0,
+							"y": 0
+						},
+						"docking": {
+							"dock": "topCenterHorizontal",
+							"x": 0,
+							"y": 40,
+							"cancelPivot": true
+						},
+						"type": "ui.TextField",
+						"visible": true,
+						"alpha": 1,
+						"worldAlpha": 1,
+						"buttonMode": false,
+						"interactive": false,
+						"metadata": {
+							"doNotExport": false
+						},
+						"children": [],
+						"text": "winningTable.title",
+						"styles": {
+							"default": {
+								"fontName": "SvenskaSpelPlatform-Regular",
+								"fontSize": 48,
+								"fill": "#ffffff"
+							}
+						},
+						"hitAreaLevel": 0,
+						"hitAreaPoint": {
+							"x": 1414.7932785299806,
+							"y": 577.8289410058028
+						},
+						"width": 0,
+						"height": 0,
+						"options": {
+							"padding": null,
+							"interLine": 0,
+							"wordWrap": false
+						},
+						"i18nKey": "winningTable.title"
+					},
+					{
+						"name": "content",
+						"rotation": 0,
+						"scaleX": 1,
+						"scaleY": 1,
+						"pivot": {
+							"x": 0,
+							"y": 0
+						},
+						"docking": {
+							"dock": "centerAll",
+							"x": 0,
+							"y": 40,
+							"cancelPivot": true
+						},
+						"type": "ui.TextField",
+						"visible": true,
+						"alpha": 1,
+						"worldAlpha": 1,
+						"buttonMode": false,
+						"interactive": false,
+						"metadata": {
+							"doNotExport": false
+						},
+						"children": [],
+						"text": "Winning Table",
+						"styles": {
+							"default": {
+								"fontName": "SvenskaSpelPlatform-Regular",
+								"fontSize": 32,
+								"fill": "#ffffff"
+							}
+						},
+						"hitAreaLevel": 0,
+						"hitAreaPoint": {
+							"x": 1524.7197775628626,
+							"y": 134.16162959381052
+						},
+						"width": 600,
+						"height": 0,
+						"options": {
+							"align": 2,
+							"padding": null,
+							"interLine": 0,
+							"wordWrap": true
+						},
+						"i18nKey": null
+					}
+				],
+				"isNineSlice": false,
+				"background": {
+					"name": "Background",
+					"x": 1.686675522279918,
+					"y": 15.180079700519261,
+					"rotation": 0,
+					"scaleX": 1,
+					"scaleY": 1,
+					"pivot": {
+						"x": 0,
+						"y": 0
+					},
+					"type": "Sprite",
+					"visible": true,
+					"alpha": 1,
+					"worldAlpha": 1,
+					"buttonMode": false,
+					"interactive": false,
+					"metadata": {
+						"doNotExport": true
+					},
+					"children": [],
+					"sprite": {
+						"texture": {
+							"imageUrl": null
+						}
+					}
+				},
+				"style": {
+					"backgroundTexture": {
+						"imageUrl": null
+					},
+					"closeButtonStyle": {
+						"name": "Container",
+						"rotation": 0,
+						"scaleX": 1,
+						"scaleY": 1,
+						"pivot": {
+							"x": 0,
+							"y": 0
+						},
+						"dockingBounds": {
+							"width": 85,
+							"height": 85
+						},
+						"docking": {
+							"dock": "topRight",
+							"x": 0,
+							"y": 0,
+							"cancelPivot": true
+						},
+						"type": "ui.Button",
+						"visible": true,
+						"alpha": 1,
+						"worldAlpha": 1,
+						"buttonMode": false,
+						"interactive": true,
+						"metadata": {
+							"doNotExport": true
+						},
+						"children": [],
+						"text": "",
+						"textStyle": {
+							"default": {}
+						},
+						"background": {
+							"name": "Background",
+							"x": 0,
+							"y": 0,
+							"rotation": 0,
+							"scaleX": 1,
+							"scaleY": 1,
+							"pivot": {
+								"x": 0,
+								"y": 0
+							},
+							"type": "Sprite",
+							"visible": true,
+							"alpha": 1,
+							"worldAlpha": 1,
+							"buttonMode": false,
+							"interactive": false,
+							"metadata": {
+								"doNotExport": true
+							},
+							"children": [],
+							"sprite": {
+								"texture": {
+									"imageUrl": null
+								}
+							}
+						},
+						"isNineSlice": false,
+						"nineSlicePadding": {
+							"x": 0,
+							"y": 0,
+							"type": 1,
+							"width": 0,
+							"height": 0
+						},
+						"nineSliceMinSize": {
+							"x": 0,
+							"y": 0
+						},
+						"style": {
+							"idleTexture": {
+								"imageUrl": null
+							},
+							"overTexture": {
+								"imageUrl": null
+							},
+							"clickedTexture": {
+								"imageUrl": null
+							},
+							"disabledTexture": {
+								"imageUrl": null
+							},
+							"textStates": {}
+						},
+						"textfield": {
+							"name": "Label",
+							"rotation": 0,
+							"scaleX": 1,
+							"scaleY": 1,
+							"pivot": {
+								"x": 0,
+								"y": 0
+							},
+							"docking": {
+								"dock": "centerAll",
+								"x": 0,
+								"y": 0,
+								"cancelPivot": true
+							},
+							"type": "ui.TextField",
+							"visible": true,
+							"alpha": 1,
+							"worldAlpha": 1,
+							"buttonMode": false,
+							"interactive": false,
+							"metadata": {
+								"doNotExport": true
+							},
+							"children": [],
+							"text": "",
+							"styles": {
+								"default": {
+									"fontName": "SvenskaSpelPlatform-Regular"
+								}
+							},
+							"hitAreaLevel": 0,
+							"hitAreaPoint": {
+								"x": -1.687912087912082,
+								"y": 10.12747252747252
+							},
+							"width": 0,
+							"height": 0,
+							"options": {
+								"align": 0,
+								"padding": null
+							},
+							"i18nKey": null
+						},
+						"trackingName": ""
+					}
+				}
+			}
+		],
+		"stateName": "winningTable",
+		"trackingName": ""
+	}
+}

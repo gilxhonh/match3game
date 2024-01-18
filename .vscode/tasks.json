@@ -1,0 +1,37 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "type": "npm",
+      "script": "start",
+      "label": "npm: start",
+      "detail": "launch gameserver",
+      "isBackground": true,
+      "dependsOn": "npm: watch",
+      "problemMatcher": {
+        "owner": "custom",
+        "pattern": {
+          "regexp": "^$"
+        },
+        "background": {
+          "activeOnStart": true,
+          "beginsPattern": ".*gameserver.*",
+          "endsPattern": ".*Server is running.*"
+        }
+      },
+      "group": {
+        "kind": "none",
+        "isDefault": true
+      }
+    },
+    {
+      "type": "npm",
+      "script": "watch",
+      "group": "build",
+      "isBackground": true,
+      "problemMatcher": ["$tsc-watch"],
+      "label": "npm: watch",
+      "detail": "tsc -p . --watch --skipLibCheck"
+    }
+  ]
+}

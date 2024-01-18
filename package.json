@@ -1,0 +1,69 @@
+{
+  "name": "match3game",
+  "version": "0.0.0",
+  "private": true,
+  "description": "Boilerplate for a multi lottery ITG game.",
+  "keywords": [
+    "applet",
+    "itg",
+    "multilottery"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://git.gdk.fdj-gs.com/dgf/applets"
+  },
+  "author": "FGS",
+  "scripts": {
+    "clean": "rimraf build delivery",
+    "compile": "tsc -p .",
+    "watch": "tsc -p . --watch",
+    "build": "npm run clean && npm run compile",
+    "start": "gameserver --logLevel=verbose",
+    "pack": "gdkpacker",
+    "format": "prettier . --write",
+    "lint": "eslint . --max-warnings 0",
+    "test": "mocha build/test/*.spec.js"
+  },
+  "dependencies": {
+    "@gdk/core": "3.8.6",
+    "@gdk/core-pixi": "3.8.6",
+    "@gdk/gamekit": "3.8.6",
+    "es6-promise": "4.2.4",
+    "gsap": "1.20.4",
+    "howler": "2.2.4",
+    "i18next": "10.6.0",
+    "opentype.js": "0.8.0",
+    "pixi-spine": "1.5.15",
+    "pixi.js": "4.8.8",
+    "proton-js": "3.1.2",
+    "systemjs": "0.21.0"
+  },
+  "devDependencies": {
+    "@gdk/backutils": "3.8.6",
+    "@gdk/croupier": "3.8.6",
+    "@gdk/gameserver": "3.8.6",
+    "@gdk/packer": "3.8.6",
+    "@gdk/rules": "2.0.2",
+    "@types/gsap": "~1.19.2",
+    "@types/howler": "~2.2.4",
+    "@types/i18next": "8.4.3",
+    "@types/mocha": "^10.0.1",
+    "@types/opentype.js": "^0.7.2",
+    "@types/pixi.js": "4.8.5",
+    "@types/proxyquire": "^1.3.28",
+    "mocha": "^10.2.0",
+    "proxyquire": "^2.1.3",
+    "rimraf": "^2.6.2",
+    "typescript": "5.1.6"
+  },
+  "engines": {
+    "node": ">=16.0.0",
+    "npm": ">=8.0.0"
+  },
+  "publishConfig": {
+    "registry": "http://otto:8081/nexus/repository/npm-release/"
+  },
+  "games": {
+    "default": "default.conf.ts"
+  }
+}

@@ -1,0 +1,63 @@
+{
+	"name": "result",
+	"data": {
+		"textStyles": {
+			"mainTextWinner": {
+				"default": {
+					"fontName": "PermanentMarker-Regular",
+					"fontSize": 70,
+					"fill": "#87e0ff",
+					"stroke": "#0b316a",
+					"strokeWidth": 6
+				}
+			},
+			"subText1Winner": {
+				"default": {
+					"fontName": "PermanentMarker-Regular",
+					"fontSize": 40,
+					"fill": "#ffffff",
+					"stroke": "#0b316a",
+					"strokeWidth": 6
+				}
+			},
+			"mainTextLooser": {
+				"default": {
+					"fontName": "PermanentMarker-Regular",
+					"fontSize": 70,
+					"fill": "#00bdff",
+					"stroke": "#0b316a",
+					"strokeWidth": 6
+				}
+			},
+			"subText1Looser": {
+				"default": {
+					"fontName": "PermanentMarker-Regular",
+					"fontSize": 40,
+					"fill": "#ffffff",
+					"stroke": "#0b316a",
+					"strokeWidth": 3
+				}
+			},
+			"subText2Looser": {
+				"default": {
+					"fontName": "PermanentMarker-Regular",
+					"fontSize": 40,
+					"fill": "#ffffff",
+					"stroke": "#0b316a",
+					"strokeWidth": 3
+				}
+			}
+		},
+		"winAmountTextStyle": {
+			"default": {
+				"fontName": "PermanentMarker-Regular",
+				"fontSize": 160,
+				"fill": "#87e0ff"
+			}
+		},
+		"scratchResultBox": {
+			"winner": "images/result/win.png",
+			"loser": "images/result/loose.png"
+		}
+	}
+}
