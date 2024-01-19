@@ -7,12 +7,15 @@ import type { Sprite } from "pixi.js";
 
 import * as utils from "./utils";
 import type { Ticket } from "./ticket";
+import AnimatedSprite = PIXI.extras.AnimatedSprite;
 
 export class HomeView extends LoadedView {
 	@fromEditor("logo")
 	protected logo!: Sprite;
 	@fromEditor("playButton")
 	protected playButton!: Button;
+	@fromEditor("spaceman")
+	protected spaceman!: AnimatedSprite;
 
 	// list of play buttons (containing just playButton if set stake was not called
 	// or if number of stakes is 1)
@@ -36,6 +39,7 @@ export class HomeView extends LoadedView {
 
 	public async onDidAppear(): Promise<void> {
 		await utils.fadeIn(this, 500);
+		this.spaceman.play();
 	}
 
 	public async onWillDisappear(): Promise<void> {

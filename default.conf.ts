@@ -18,7 +18,7 @@ export const config: IGameConfFile<CustomConf> = {
 		supportedBetModes: ["BET_MANUAL_CLAIM", "BET_AUTO_CLAIM"],
 	},
 	gameParameters: {
-		orientation: "BOTH"
+		orientation: "BOTH",
 	},
 	behavioursParameters: {
 		demo: {
@@ -27,58 +27,54 @@ export const config: IGameConfFile<CustomConf> = {
 			enableResumeHook: true,
 			enableGameEndHook: true,
 			viSkipIntroduction: true,
-			views: [ "splash", "rules", "home", "reveal", "result", "home" ]
+			views: ["splash", "rules", "home", "reveal", "result", "home"],
 		},
 		fdj: {
 			vi: "fdj",
 			enablePreBetHook: false,
-			views: [ "splash", "rules", "home", "reveal", "result", "home" ]
+			views: ["splash", "rules", "home", "reveal", "result", "home"],
 		},
 		nt: {
 			vi: "fgs_nt",
-			views: [ "splash", "rules", "home", "reveal", "result", "home" ]
+			views: ["splash", "rules", "home", "reveal", "result", "home"],
 		},
 		ds: {
 			vi: "ds",
-			views: [ "reveal" ]
+			views: ["reveal"],
 		},
 		ds_custo: {
 			vi: "fgs_ds",
-			views: [ "splash", "rules", "home", "reveal", "result", "home" ]
+			views: ["splash", "rules", "home", "reveal", "result", "home"],
 		},
 		svs: {
 			vi: "svs",
 			resumeTime: "never",
-			views: [ "reveal" ]
+			views: ["reveal"],
 		},
 		lor: {
 			vi: "lor",
-			views: [ "splash", "reveal", "result" ]
+			views: ["splash", "reveal", "result"],
 		},
 		szk: {
 			vi: "fgs_szk",
-			views: [ "splash", "rules", "home", "reveal", "result", "home" ]
+			views: ["splash", "rules", "home", "reveal", "result", "home"],
 		},
 		ees: {
 			vi: "fgs_ees",
-			views: [ "splash", "rules", "home", "reveal", "result", "home" ]
+			views: ["splash", "rules", "home", "reveal", "result", "home"],
 		},
 		vks: {
 			vi: "vks",
 			enableGameEndHook: true,
 			enableResumeHook: true,
-			views: [ "home", "reveal", "result", "home" ]
+			views: ["home", "reveal", "result", "home"],
 		},
 	},
 	engine: "ITG",
 	gameserver: {
 		lotteryGameCode: "game-itg",
 		services: { "game-itg": "dealers/croupier.json" },
-		stakes: [
-			{ value: 100, currency: "USD" },
-			{ value: 1000, currency: "USD" },
-			{ value: 6000, currency: "USD" },
-		],
+		stakes: [{ value: 100, currency: "USD" }],
 		demo: { enabled: true, forceAuthentication: false },
 		selectedBetMode: "BET_MANUAL_CLAIM",
 		selectedTheme: "default",

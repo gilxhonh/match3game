@@ -1665,17 +1665,13 @@
 						"x": 0,
 						"y": 0
 					},
-					"dockingBounds": {
-						"width": 170,
-						"height": 50
-					},
 					"docking": {
 						"dock": "centerAll",
 						"x": 0,
-						"y": 200,
+						"y": 188,
 						"cancelPivot": true
 					},
-					"type": "ui.Button",
+					"type": "spine.SpineTimelineButton",
 					"visible": true,
 					"alpha": 1,
 					"worldAlpha": 1,
@@ -1683,125 +1679,71 @@
 					"interactive": true,
 					"metadata": {},
 					"children": [],
-					"text": "reveal.auto",
-					"textStyle": {
+					"assetId": "04_btnPlay.json",
+					"skin": "auto",
+					"slots": [
+						{
+							"name": "cta",
+							"children": []
+						},
+						{
+							"name": "idle",
+							"children": []
+						},
+						{
+							"name": "transition",
+							"children": []
+						},
+						{
+							"name": "over",
+							"children": []
+						},
+						{
+							"name": "click",
+							"children": []
+						},
+						{
+							"name": "disable",
+							"children": []
+						},
+						{
+							"name": "symbol",
+							"children": []
+						}
+					],
+					"sequences": [],
+					"animationsNames": {
+						"enter": "enter",
+						"exit": "exit",
+						"disable": "disable",
+						"disableLoop": "disable",
+						"idle": "idle",
+						"idleLoop": "idle",
+						"over": "over",
+						"overLoop": "over",
+						"out": "out",
+						"down": "click",
+						"downLoop": "downLoop",
+						"up": "up",
+						"callToAction": "cta"
+					},
+					"loopOnIdle": false,
+					"loopOnDown": false,
+					"loopOnOver": false,
+					"loopOnDisable": false,
+					"styles": {
 						"default": {
 							"fontName": "Arial",
-							"fill": "#000000",
-							"fontSize": 24
+							"fontSize": 24,
+							"fill": "#ffffff"
 						}
 					},
-					"background": {
-						"name": "Background",
-						"x": 0,
-						"y": 0,
-						"rotation": 0,
-						"scaleX": 17,
-						"scaleY": 5,
-						"pivot": {
-							"x": 0,
-							"y": 0
-						},
-						"type": "Sprite",
-						"visible": true,
-						"alpha": 1,
-						"worldAlpha": 1,
-						"buttonMode": false,
-						"interactive": false,
-						"metadata": {
-							"doNotExport": true
-						},
-						"children": [],
-						"sprite": {
-							"texture": {
-								"imageUrl": "white.png"
-							}
-						}
+					"label": "",
+					"callToActionDelay": {
+						"min": 5,
+						"max": 5
 					},
-					"isNineSlice": false,
-					"nineSlicePadding": {
-						"x": 0,
-						"y": 0,
-						"type": 1,
-						"width": 0,
-						"height": 0
-					},
-					"nineSliceMinSize": {
-						"x": 0,
-						"y": 0
-					},
-					"style": {
-						"idleTexture": {
-							"imageUrl": "white.png"
-						},
-						"overTexture": {
-							"imageUrl": "white.png"
-						},
-						"clickedTexture": {
-							"imageUrl": "white.png"
-						},
-						"disabledTexture": {
-							"imageUrl": "white.png"
-						},
-						"textStates": {
-							"idle": {
-								"fill": "#333333"
-							},
-							"hover": {
-								"fill": "#000000"
-							},
-							"disabled": {
-								"fill": "#777777"
-							}
-						}
-					},
-					"textfield": {
-						"name": "Label",
-						"rotation": 0,
-						"scaleX": 1,
-						"scaleY": 1,
-						"pivot": {
-							"x": 0,
-							"y": 0
-						},
-						"docking": {
-							"dock": "centerAll",
-							"x": 0,
-							"y": 0,
-							"cancelPivot": true
-						},
-						"type": "ui.TextField",
-						"visible": true,
-						"alpha": 1,
-						"worldAlpha": 1,
-						"buttonMode": false,
-						"interactive": false,
-						"metadata": {
-							"doNotExport": true
-						},
-						"children": [],
-						"text": "reveal.auto",
-						"styles": {
-							"default": {
-								"fontName": "Arial",
-								"fill": "#333333",
-								"fontSize": 24
-							}
-						},
-						"hitAreaLevel": 0,
-						"hitAreaPoint": {
-							"x": 0,
-							"y": 0
-						},
-						"width": 0,
-						"height": 0,
-						"options": {
-							"align": 0,
-							"padding": null,
-							"wordWrap": false
-						},
-						"i18nKey": "reveal.auto"
-					},
+					"callToActionEnabled": true,
 					"trackingName": ""
 				},
 				{

@@ -1,6 +1,6 @@
 import { fromEditor, LoadedView } from "@gdk/core-pixi";
 import { ETicketMode } from "@gdk/gamekit";
-import type { Button } from "@gdk/core-pixi";
+import type { SpineTimelineButton } from "@gdk/core-pixi/spine2/button";
 
 import * as utils from "./utils";
 import { RevealCell } from "./revealCell";
@@ -8,7 +8,7 @@ import type { Ticket } from "./ticket";
 
 export class RevealView extends LoadedView {
 	@fromEditor("autoButton")
-	protected autoButton!: Button;
+	protected autoButton!: SpineTimelineButton;
 
 	@fromEditor("cell1")
 	protected cell1: RevealCell = new RevealCell();
@@ -190,8 +190,8 @@ export class RevealView extends LoadedView {
 	public async onWillAppear(): Promise<void> {
 		// prepare to enter
 		this.visible = false;
-		this.autoButton.enabled = false;
 		this.autoButton.alpha = 0;
+		this.autoButton.enabled = false;
 
 		// cells enter
 		let lastCellEnter: Promise<void> = Promise.resolve();
@@ -204,8 +204,8 @@ export class RevealView extends LoadedView {
 		await lastCellEnter;
 
 		// auto button enters
-		await utils.fadeIn(this.autoButton);
 		this.autoButton.enabled = true;
+		await utils.fadeIn(this.autoButton);
 		this.autoInProgress = false;
 
 		// start replay
