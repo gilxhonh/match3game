@@ -20,8 +20,8 @@
 		"children": [
 			{
 				"name": "background",
-				"x": 0.7252051591880267,
-				"y": -0.41358653800560113,
+				"x": -0.5,
+				"y": -41,
 				"rotation": 0,
 				"scaleX": 1,
 				"scaleY": 1,
@@ -29,32 +29,276 @@
 					"x": 0,
 					"y": 0
 				},
+				"dockingBounds": {
+					"width": 1024,
+					"height": 768
+				},
 				"resize": {
 					"resize": "cover"
 				},
-				"type": "Graphics",
+				"type": "Container",
 				"visible": true,
 				"alpha": 1,
 				"worldAlpha": 1,
 				"buttonMode": false,
 				"interactive": false,
 				"metadata": {},
-				"children": [],
-				"graphicsDatas": [
+				"children": [
 					{
-						"lineWidth": 0,
-						"lineColor": 0,
-						"fillColor": 14145495,
-						"fillAlpha": 1,
-						"fill": true,
-						"nativeLines": false,
-						"shape": {
+						"name": "bg_01",
+						"x": 0,
+						"y": 0,
+						"rotation": 0,
+						"scaleX": 1,
+						"scaleY": 1,
+						"pivot": {
 							"x": 0,
-							"y": 0,
-							"type": 1,
-							"width": 100,
-							"height": 100
+							"y": 0
+						},
+						"type": "Sprite",
+						"visible": true,
+						"alpha": 1,
+						"worldAlpha": 1,
+						"buttonMode": false,
+						"interactive": false,
+						"metadata": {},
+						"children": [],
+						"sprite": {
+							"texture": {
+								"imageUrl": "bg_01"
+							}
 						}
+					},
+					{
+						"name": "starsParticles",
+						"rotation": 0,
+						"scaleX": 1,
+						"scaleY": 1,
+						"pivot": {
+							"x": 512,
+							"y": 384
+						},
+						"dockingBounds": {
+							"width": 1024,
+							"height": 768
+						},
+						"docking": {
+							"dock": "centerAll",
+							"x": 0,
+							"y": -690,
+							"cancelPivot": true
+						},
+						"type": "proton.ProtonContainer",
+						"visible": true,
+						"alpha": 1,
+						"worldAlpha": 1,
+						"buttonMode": false,
+						"interactive": false,
+						"metadata": {},
+						"children": [],
+						"config": [
+							{
+								"name": "Default Emitter",
+								"id": "default-emitter",
+								"rate": {
+									"type": "Rate",
+									"arguments": [
+										{
+											"type": "Span",
+											"arguments": [
+												1,
+												10
+											]
+										},
+										{
+											"type": "Span",
+											"arguments": [
+												0.5,
+												1
+											]
+										}
+									]
+								},
+								"damping": 0.006,
+								"behaviors": [
+									{
+										"type": "Scale",
+										"arguments": [
+											{
+												"type": "Span",
+												"arguments": [
+													0.05,
+													0.05
+												]
+											},
+											{
+												"type": "Span",
+												"arguments": [
+													0.01,
+													0.012
+												]
+											}
+										]
+									},
+									{
+										"type": "Alpha",
+										"arguments": [
+											{
+												"type": "Span",
+												"arguments": [
+													1,
+													0
+												]
+											},
+											{
+												"type": "Span",
+												"arguments": [
+													1,
+													0
+												]
+											}
+										]
+									}
+								],
+								"initializers": [
+									{
+										"type": "Body",
+										"arguments": [
+											"particles/particle4",
+											1,
+											1
+										]
+									},
+									{
+										"type": "Life",
+										"arguments": [
+											{
+												"type": "Span",
+												"arguments": [
+													1,
+													50
+												]
+											}
+										]
+									},
+									{
+										"type": "Position",
+										"arguments": [
+											{
+												"type": "RectZone",
+												"arguments": [
+													0,
+													0,
+													1024,
+													2048
+												]
+											}
+										]
+									}
+								]
+							},
+							{
+								"name": "stars1",
+								"id": "stars1",
+								"rate": {
+									"type": "Rate",
+									"arguments": [
+										{
+											"type": "Span",
+											"arguments": [
+												1,
+												10
+											]
+										},
+										{
+											"type": "Span",
+											"arguments": [
+												0.5,
+												1
+											]
+										}
+									]
+								},
+								"damping": 0.006,
+								"behaviors": [
+									{
+										"type": "Scale",
+										"arguments": [
+											{
+												"type": "Span",
+												"arguments": [
+													0.05,
+													0.05
+												]
+											},
+											{
+												"type": "Span",
+												"arguments": [
+													0.01,
+													0.12
+												]
+											}
+										]
+									},
+									{
+										"type": "Alpha",
+										"arguments": [
+											{
+												"type": "Span",
+												"arguments": [
+													1,
+													0
+												]
+											},
+											{
+												"type": "Span",
+												"arguments": [
+													1,
+													0
+												]
+											}
+										]
+									}
+								],
+								"initializers": [
+									{
+										"type": "Body",
+										"arguments": [
+											"particles/particle3",
+											1,
+											1
+										]
+									},
+									{
+										"type": "Life",
+										"arguments": [
+											{
+												"type": "Span",
+												"arguments": [
+													1,
+													20
+												]
+											}
+										]
+									},
+									{
+										"type": "Position",
+										"arguments": [
+											{
+												"type": "RectZone",
+												"arguments": [
+													0,
+													0,
+													2048,
+													4096
+												]
+											}
+										]
+									}
+								]
+							}
+						],
+						"autoStart": true
 					}
 				]
 			},
@@ -392,13 +636,13 @@
 									"y": 15
 								},
 								"dockingBounds": {
-									"width": 30,
-									"height": 30
+									"width": 64,
+									"height": 64
 								},
 								"docking": {
 									"dock": "topRight",
 									"x": -10,
-									"y": 12,
+									"y": 15,
 									"cancelPivot": true
 								},
 								"type": "ui.Button",
@@ -422,8 +666,8 @@
 									"x": 0,
 									"y": 0,
 									"rotation": 0,
-									"scaleX": 3,
-									"scaleY": 3,
+									"scaleX": 1,
+									"scaleY": 1,
 									"pivot": {
 										"x": 0,
 										"y": 0
@@ -440,7 +684,7 @@
 									"children": [],
 									"sprite": {
 										"texture": {
-											"imageUrl": "white.png"
+											"imageUrl": "btn_regle_fermer_00"
 										}
 									}
 								},
@@ -458,13 +702,13 @@
 								},
 								"style": {
 									"idleTexture": {
-										"imageUrl": "white.png"
+										"imageUrl": "btn_regle_fermer_00"
 									},
 									"overTexture": {
-										"imageUrl": "white.png"
+										"imageUrl": "btn_regle_fermer_01"
 									},
 									"clickedTexture": {
-										"imageUrl": "white.png"
+										"imageUrl": "btn_regle_fermer_02"
 									},
 									"disabledTexture": {
 										"imageUrl": "white.png"
@@ -491,12 +735,12 @@
 									},
 									"docking": {
 										"dock": "centerAll",
-										"x": 1,
+										"x": 0,
 										"y": 13,
 										"cancelPivot": true
 									},
 									"type": "ui.TextField",
-									"visible": true,
+									"visible": false,
 									"alpha": 1,
 									"worldAlpha": 1,
 									"buttonMode": false,
@@ -523,6 +767,7 @@
 									"options": {
 										"align": 0,
 										"padding": null,
+										"interLine": 0,
 										"wordWrap": false
 									},
 									"i18nKey": null
@@ -1001,99 +1246,38 @@
 			"worldAlpha": 1,
 			"buttonMode": false,
 			"interactive": false,
-			"metadata": {},
+			"metadata": {
+				"alwaysVisible": false
+			},
 			"children": [
 				{
 					"name": "logo",
 					"rotation": 0,
-					"scaleX": 1,
-					"scaleY": 1,
+					"scaleX": 0.9375,
+					"scaleY": 0.875,
 					"pivot": {
 						"x": 0,
 						"y": 0
 					},
-					"dockingBounds": {
-						"width": 500,
-						"height": 100
-					},
 					"docking": {
 						"dock": "centerAll",
 						"x": 0,
-						"y": -80,
+						"y": -135.93650793650795,
 						"cancelPivot": true
 					},
-					"type": "Graphics",
+					"type": "Sprite",
 					"visible": true,
 					"alpha": 1,
 					"worldAlpha": 1,
 					"buttonMode": false,
 					"interactive": false,
 					"metadata": {},
-					"children": [
-						{
-							"name": "text",
-							"rotation": 0,
-							"scaleX": 1,
-							"scaleY": 1,
-							"pivot": {
-								"x": 250,
-								"y": 26.8125
-							},
-							"docking": {
-								"dock": "centerAll",
-								"x": 0,
-								"y": 0,
-								"cancelPivot": true
-							},
-							"type": "ui.TextField",
-							"visible": true,
-							"alpha": 1,
-							"worldAlpha": 1,
-							"buttonMode": false,
-							"interactive": false,
-							"metadata": {},
-							"children": [],
-							"text": "gameName",
-							"styles": {
-								"default": {
-									"fontName": "Arial",
-									"fontSize": 48,
-									"fill": "#000000"
-								}
-							},
-							"hitAreaLevel": 0,
-							"hitAreaPoint": {
-								"x": 0,
-								"y": 0
-							},
-							"width": 500,
-							"height": 0,
-							"options": {
-								"align": 2,
-								"padding": null,
-								"interLine": 0,
-								"wordWrap": true
-							},
-							"i18nKey": "gameName"
+					"children": [],
+					"sprite": {
+						"texture": {
+							"imageUrl": "logo/logo"
 						}
-					],
-					"graphicsDatas": [
-						{
-							"lineWidth": 0,
-							"lineColor": 0,
-							"fillColor": 16777215,
-							"fillAlpha": 1,
-							"fill": true,
-							"nativeLines": false,
-							"shape": {
-								"x": 0,
-								"y": 0,
-								"type": 1,
-								"width": 500,
-								"height": 100
-							}
-						}
-					]
+					}
 				}
 			],
 			"stateName": "splash",
@@ -1159,94 +1343,31 @@
 				{
 					"name": "logo",
 					"rotation": 0,
-					"scaleX": 1,
-					"scaleY": 1,
+					"scaleX": 0.9375,
+					"scaleY": 0.875,
 					"pivot": {
 						"x": 0,
 						"y": 0
 					},
-					"dockingBounds": {
-						"width": 500,
-						"height": 100
-					},
 					"docking": {
 						"dock": "centerAll",
 						"x": 0,
-						"y": -80,
+						"y": -135.93650793650795,
 						"cancelPivot": true
 					},
-					"type": "Graphics",
+					"type": "Sprite",
 					"visible": true,
 					"alpha": 1,
 					"worldAlpha": 1,
 					"buttonMode": false,
 					"interactive": false,
 					"metadata": {},
-					"children": [
-						{
-							"name": "text",
-							"rotation": 0,
-							"scaleX": 1,
-							"scaleY": 1,
-							"pivot": {
-								"x": 250,
-								"y": 26.8125
-							},
-							"docking": {
-								"dock": "centerAll",
-								"x": 0,
-								"y": 0,
-								"cancelPivot": true
-							},
-							"type": "ui.TextField",
-							"visible": true,
-							"alpha": 1,
-							"worldAlpha": 1,
-							"buttonMode": false,
-							"interactive": false,
-							"metadata": {},
-							"children": [],
-							"text": "gameName",
-							"styles": {
-								"default": {
-									"fontName": "Arial",
-									"fontSize": 48,
-									"fill": "#000000"
-								}
-							},
-							"hitAreaLevel": 0,
-							"hitAreaPoint": {
-								"x": 0,
-								"y": 0
-							},
-							"width": 500,
-							"height": 0,
-							"options": {
-								"align": 2,
-								"padding": null,
-								"interLine": 0,
-								"wordWrap": true
-							},
-							"i18nKey": "gameName"
+					"children": [],
+					"sprite": {
+						"texture": {
+							"imageUrl": "logo/logo"
 						}
-					],
-					"graphicsDatas": [
-						{
-							"lineWidth": 0,
-							"lineColor": 0,
-							"fillColor": 16777215,
-							"fillAlpha": 1,
-							"fill": true,
-							"nativeLines": false,
-							"shape": {
-								"x": 0,
-								"y": 0,
-								"type": 1,
-								"width": 500,
-								"height": 100
-							}
-						}
-					]
+					}
 				},
 				{
 					"name": "playButton",
@@ -1264,7 +1385,7 @@
 					"docking": {
 						"dock": "centerAll",
 						"x": 0,
-						"y": 60,
+						"y": 198,
 						"cancelPivot": true
 					},
 					"type": "ui.Button",
@@ -1286,7 +1407,7 @@
 					"background": {
 						"name": "Background",
 						"x": 0,
-						"y": 0,
+						"y": 2.500000000000001,
 						"rotation": 0,
 						"scaleX": 1,
 						"scaleY": 1,
@@ -1306,7 +1427,7 @@
 						"children": [],
 						"sprite": {
 							"texture": {
-								"imageUrl": "btn_jouer_01"
+								"imageUrl": "btn_jouer_00"
 							}
 						}
 					},
@@ -1389,12 +1510,121 @@
 						"options": {
 							"align": 0,
 							"padding": null,
-							"interLine": 0,
 							"wordWrap": false
 						},
 						"i18nKey": "home.play"
 					},
 					"trackingName": ""
+				},
+				{
+					"name": "tertre-xbol",
+					"rotation": 0,
+					"scaleX": 1,
+					"scaleY": 1,
+					"pivot": {
+						"x": 0,
+						"y": 0
+					},
+					"docking": {
+						"dock": "centerAll",
+						"x": 0,
+						"y": 80,
+						"cancelPivot": true
+					},
+					"type": "ui.TextField",
+					"visible": true,
+					"alpha": 1,
+					"worldAlpha": 1,
+					"buttonMode": false,
+					"interactive": false,
+					"metadata": {},
+					"children": [],
+					"text": "PODE GANHAR ATÉ €10.000",
+					"styles": {
+						"default": {
+							"fontName": "RifficFree-Bold",
+							"fontSize": 45,
+							"fill": "#ffffff"
+						}
+					},
+					"hitAreaLevel": 0,
+					"hitAreaPoint": {
+						"x": 0,
+						"y": 0
+					},
+					"width": 0,
+					"height": 0,
+					"options": {
+						"align": 0,
+						"padding": null,
+						"interLine": 0,
+						"wordWrap": false
+					},
+					"i18nKey": null
+				},
+				{
+					"name": "spaceman",
+					"rotation": 0,
+					"scaleX": 1,
+					"scaleY": 1,
+					"pivot": {
+						"x": 0,
+						"y": 0
+					},
+					"docking": {
+						"dock": "centerVerticalRight",
+						"x": 0,
+						"y": 0,
+						"cancelPivot": true
+					},
+					"type": "extras.AnimatedSprite",
+					"visible": true,
+					"alpha": 1,
+					"worldAlpha": 1,
+					"buttonMode": false,
+					"interactive": false,
+					"metadata": {},
+					"children": [],
+					"animatedSprite": {
+						"loop": true,
+						"animationSpeed": 0.1,
+						"textures": [
+							{
+								"imageUrl": "sp_decor_00"
+							},
+							{
+								"imageUrl": "sp_decor_01"
+							},
+							{
+								"imageUrl": "sp_decor_02"
+							},
+							{
+								"imageUrl": "sp_decor_03"
+							},
+							{
+								"imageUrl": "sp_decor_04"
+							},
+							{
+								"imageUrl": "sp_decor_05"
+							},
+							{
+								"imageUrl": "sp_decor_06"
+							},
+							{
+								"imageUrl": "sp_decor_07"
+							}
+						],
+						"durations": [
+							16,
+							16,
+							16,
+							16,
+							16,
+							16,
+							16,
+							16
+						]
+					}
 				}
 			],
 			"stateName": "home",

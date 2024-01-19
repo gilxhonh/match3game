@@ -7,5 +7,12 @@
 	"Mogra-Regular": "fonts/Mogra-Regular.ttf",
 	"RifficFree-Bold": "fonts/RifficFree-Bold.woff",
 	"Roboto-Bold": "fonts/Roboto-Bold.ttf",
-	"tertre-xbol": "fonts/tertre-xbol.woff"
+	"tertre-xbol": "fonts/tertre-xbol.woff",
+	"logo.png": "images/logo.png",
+	"03_symbolButton.json": "animations/03_symbolButton.json",
+	"04_btnPlay.json": "animations/04_btnPlay.json",
+	"05_background.json": "animations/05_background.json",
+	"00_symbols.json": "animations/00_symbols.json",
+	"01_reveal.json": "animations/01_reveal.json",
+	"02_backSymbols.json": "animations/02_backSymbols.json"
 }

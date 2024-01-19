@@ -22,8 +22,8 @@
 		"children": [
 			{
 				"name": "background",
-				"x": 0.7252051591880267,
-				"y": -0.41358653800560113,
+				"x": -0.5,
+				"y": -41,
 				"rotation": 0,
 				"scaleX": 1,
 				"scaleY": 1,
@@ -31,10 +31,14 @@
 					"x": 0,
 					"y": 0
 				},
+				"dockingBounds": {
+					"width": 1024,
+					"height": 768
+				},
 				"resize": {
 					"resize": "cover"
 				},
-				"type": "Graphics",
+				"type": "Container",
 				"visible": true,
 				"alpha": 1,
 				"worldAlpha": 1,
@@ -43,22 +47,266 @@
 				"metadata": {
 					"doNotExport": false
 				},
-				"children": [],
-				"graphicsDatas": [
+				"children": [
 					{
-						"lineWidth": 0,
-						"lineColor": 0,
-						"fillColor": 14145495,
-						"fillAlpha": 1,
-						"fill": true,
-						"nativeLines": false,
-						"shape": {
+						"name": "bg_01",
+						"x": 0,
+						"y": 0,
+						"rotation": 0,
+						"scaleX": 1,
+						"scaleY": 1,
+						"pivot": {
 							"x": 0,
-							"y": 0,
-							"type": 1,
-							"width": 100,
-							"height": 100
+							"y": 0
+						},
+						"type": "Sprite",
+						"visible": true,
+						"alpha": 1,
+						"worldAlpha": 1,
+						"buttonMode": false,
+						"interactive": false,
+						"metadata": {
+							"doNotExport": false
+						},
+						"children": [],
+						"sprite": {
+							"texture": {
+								"imageUrl": "bg_01"
+							}
 						}
+					},
+					{
+						"name": "starsParticles",
+						"rotation": 0,
+						"scaleX": 1,
+						"scaleY": 1,
+						"pivot": {
+							"x": 512,
+							"y": 384
+						},
+						"dockingBounds": {
+							"width": 1024,
+							"height": 768
+						},
+						"docking": {
+							"dock": "centerAll",
+							"x": 0,
+							"y": -690,
+							"cancelPivot": true
+						},
+						"type": "proton.ProtonContainer",
+						"visible": true,
+						"alpha": 1,
+						"worldAlpha": 1,
+						"buttonMode": false,
+						"interactive": false,
+						"metadata": {
+							"doNotExport": false
+						},
+						"children": [],
+						"config": [
+							{
+								"name": "Default Emitter",
+								"id": "default-emitter",
+								"rate": {
+									"type": "Rate",
+									"arguments": [
+										{
+											"type": "Span",
+											"arguments": [
+												1,
+												10
+											]
+										},
+										{
+											"type": "Span",
+											"arguments": [
+												0.5,
+												1
+											]
+										}
+									]
+								},
+								"damping": 0.006,
+								"behaviors": [
+									{
+										"type": "Scale",
+										"arguments": [
+											{
+												"type": "Span",
+												"arguments": [
+													0.05,
+													0.05
+												]
+											},
+											{
+												"type": "Span",
+												"arguments": [
+													0.01,
+													0.012
+												]
+											}
+										]
+									},
+									{
+										"type": "Alpha",
+										"arguments": [
+											{
+												"type": "Span",
+												"arguments": [
+													1,
+													0
+												]
+											},
+											{
+												"type": "Span",
+												"arguments": [
+													1,
+													0
+												]
+											}
+										]
+									}
+								],
+								"initializers": [
+									{
+										"type": "Body",
+										"arguments": [
+											"particles/particle4",
+											1,
+											1
+										]
+									},
+									{
+										"type": "Life",
+										"arguments": [
+											{
+												"type": "Span",
+												"arguments": [
+													1,
+													50
+												]
+											}
+										]
+									},
+									{
+										"type": "Position",
+										"arguments": [
+											{
+												"type": "RectZone",
+												"arguments": [
+													0,
+													0,
+													1024,
+													2048
+												]
+											}
+										]
+									}
+								]
+							},
+							{
+								"name": "stars1",
+								"id": "stars1",
+								"rate": {
+									"type": "Rate",
+									"arguments": [
+										{
+											"type": "Span",
+											"arguments": [
+												1,
+												10
+											]
+										},
+										{
+											"type": "Span",
+											"arguments": [
+												0.5,
+												1
+											]
+										}
+									]
+								},
+								"damping": 0.006,
+								"behaviors": [
+									{
+										"type": "Scale",
+										"arguments": [
+											{
+												"type": "Span",
+												"arguments": [
+													0.05,
+													0.05
+												]
+											},
+											{
+												"type": "Span",
+												"arguments": [
+													0.01,
+													0.12
+												]
+											}
+										]
+									},
+									{
+										"type": "Alpha",
+										"arguments": [
+											{
+												"type": "Span",
+												"arguments": [
+													1,
+													0
+												]
+											},
+											{
+												"type": "Span",
+												"arguments": [
+													1,
+													0
+												]
+											}
+										]
+									}
+								],
+								"initializers": [
+									{
+										"type": "Body",
+										"arguments": [
+											"particles/particle3",
+											1,
+											1
+										]
+									},
+									{
+										"type": "Life",
+										"arguments": [
+											{
+												"type": "Span",
+												"arguments": [
+													1,
+													20
+												]
+											}
+										]
+									},
+									{
+										"type": "Position",
+										"arguments": [
+											{
+												"type": "RectZone",
+												"arguments": [
+													0,
+													0,
+													2048,
+													4096
+												]
+											}
+										]
+									}
+								]
+							}
+						],
+						"autoStart": true
 					}
 				]
 			},
@@ -414,13 +662,13 @@
 									"y": 15
 								},
 								"dockingBounds": {
-									"width": 30,
-									"height": 30
+									"width": 64,
+									"height": 64
 								},
 								"docking": {
 									"dock": "topRight",
 									"x": -10,
-									"y": 12,
+									"y": 15,
 									"cancelPivot": true
 								},
 								"type": "ui.Button",
@@ -446,8 +694,8 @@
 									"x": 0,
 									"y": 0,
 									"rotation": 0,
-									"scaleX": 3,
-									"scaleY": 3,
+									"scaleX": 1,
+									"scaleY": 1,
 									"pivot": {
 										"x": 0,
 										"y": 0
@@ -464,7 +712,7 @@
 									"children": [],
 									"sprite": {
 										"texture": {
-											"imageUrl": "white.png"
+											"imageUrl": "btn_regle_fermer_00"
 										}
 									}
 								},
@@ -482,13 +730,13 @@
 								},
 								"style": {
 									"idleTexture": {
-										"imageUrl": "white.png"
+										"imageUrl": "btn_regle_fermer_00"
 									},
 									"overTexture": {
-										"imageUrl": "white.png"
+										"imageUrl": "btn_regle_fermer_01"
 									},
 									"clickedTexture": {
-										"imageUrl": "white.png"
+										"imageUrl": "btn_regle_fermer_02"
 									},
 									"disabledTexture": {
 										"imageUrl": "white.png"
@@ -515,12 +763,12 @@
 									},
 									"docking": {
 										"dock": "centerAll",
-										"x": 1,
+										"x": 0,
 										"y": 13,
 										"cancelPivot": true
 									},
 									"type": "ui.TextField",
-									"visible": true,
+									"visible": false,
 									"alpha": 1,
 									"worldAlpha": 1,
 									"buttonMode": false,
@@ -547,6 +795,7 @@
 									"options": {
 										"align": 0,
 										"padding": null,
+										"interLine": 0,
 										"wordWrap": false
 									},
 									"i18nKey": null

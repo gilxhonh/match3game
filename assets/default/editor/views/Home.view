@@ -31,23 +31,19 @@
 			{
 				"name": "logo",
 				"rotation": 0,
-				"scaleX": 1,
-				"scaleY": 1,
+				"scaleX": 0.9375,
+				"scaleY": 0.875,
 				"pivot": {
 					"x": 0,
 					"y": 0
 				},
-				"dockingBounds": {
-					"width": 500,
-					"height": 100
-				},
 				"docking": {
 					"dock": "centerAll",
 					"x": 0,
-					"y": -80,
+					"y": -135.93650793650795,
 					"cancelPivot": true
 				},
-				"type": "Graphics",
+				"type": "Sprite",
 				"visible": true,
 				"alpha": 1,
 				"worldAlpha": 1,
@@ -56,73 +52,12 @@
 				"metadata": {
 					"doNotExport": false
 				},
-				"children": [
-					{
-						"name": "text",
-						"rotation": 0,
-						"scaleX": 1,
-						"scaleY": 1,
-						"pivot": {
-							"x": 250,
-							"y": 26.8125
-						},
-						"docking": {
-							"dock": "centerAll",
-							"x": 0,
-							"y": 0,
-							"cancelPivot": true
-						},
-						"type": "ui.TextField",
-						"visible": true,
-						"alpha": 1,
-						"worldAlpha": 1,
-						"buttonMode": false,
-						"interactive": false,
-						"metadata": {
-							"doNotExport": false
-						},
-						"children": [],
-						"text": "gameName",
-						"styles": {
-							"default": {
-								"fontName": "Arial",
-								"fontSize": 48,
-								"fill": "#000000"
-							}
-						},
-						"hitAreaLevel": 0,
-						"hitAreaPoint": {
-							"x": 0,
-							"y": 0
-						},
-						"width": 500,
-						"height": 0,
-						"options": {
-							"align": 2,
-							"padding": null,
-							"interLine": 0,
-							"wordWrap": true
-						},
-						"i18nKey": "gameName"
+				"children": [],
+				"sprite": {
+					"texture": {
+						"imageUrl": "logo/logo"
 					}
-				],
-				"graphicsDatas": [
-					{
-						"lineWidth": 0,
-						"lineColor": 0,
-						"fillColor": 16777215,
-						"fillAlpha": 1,
-						"fill": true,
-						"nativeLines": false,
-						"shape": {
-							"x": 0,
-							"y": 0,
-							"type": 1,
-							"width": 500,
-							"height": 100
-						}
-					}
-				]
+				}
 			},
 			{
 				"name": "playButton",
@@ -140,7 +75,7 @@
 				"docking": {
 					"dock": "centerAll",
 					"x": 0,
-					"y": 60,
+					"y": 198,
 					"cancelPivot": true
 				},
 				"type": "ui.Button",
@@ -164,7 +99,7 @@
 				"background": {
 					"name": "Background",
 					"x": 0,
-					"y": 0,
+					"y": 2.500000000000001,
 					"rotation": 0,
 					"scaleX": 1,
 					"scaleY": 1,
@@ -184,7 +119,7 @@
 					"children": [],
 					"sprite": {
 						"texture": {
-							"imageUrl": "btn_jouer_01"
+							"imageUrl": "btn_jouer_00"
 						}
 					}
 				},
@@ -267,12 +202,125 @@
 					"options": {
 						"align": 0,
 						"padding": null,
-						"interLine": 0,
 						"wordWrap": false
 					},
 					"i18nKey": "home.play"
 				},
 				"trackingName": ""
+			},
+			{
+				"name": "tertre-xbol",
+				"rotation": 0,
+				"scaleX": 1,
+				"scaleY": 1,
+				"pivot": {
+					"x": 0,
+					"y": 0
+				},
+				"docking": {
+					"dock": "centerAll",
+					"x": 0,
+					"y": 80,
+					"cancelPivot": true
+				},
+				"type": "ui.TextField",
+				"visible": true,
+				"alpha": 1,
+				"worldAlpha": 1,
+				"buttonMode": false,
+				"interactive": false,
+				"metadata": {
+					"doNotExport": false
+				},
+				"children": [],
+				"text": "PODE GANHAR ATÉ €10.000",
+				"styles": {
+					"default": {
+						"fontName": "RifficFree-Bold",
+						"fontSize": 45,
+						"fill": "#ffffff"
+					}
+				},
+				"hitAreaLevel": 0,
+				"hitAreaPoint": {
+					"x": 0,
+					"y": 0
+				},
+				"width": 0,
+				"height": 0,
+				"options": {
+					"align": 0,
+					"padding": null,
+					"interLine": 0,
+					"wordWrap": false
+				},
+				"i18nKey": null
+			},
+			{
+				"name": "spaceman",
+				"rotation": 0,
+				"scaleX": 1,
+				"scaleY": 1,
+				"pivot": {
+					"x": 0,
+					"y": 0
+				},
+				"docking": {
+					"dock": "centerVerticalRight",
+					"x": 0,
+					"y": 0,
+					"cancelPivot": true
+				},
+				"type": "extras.AnimatedSprite",
+				"visible": true,
+				"alpha": 1,
+				"worldAlpha": 1,
+				"buttonMode": false,
+				"interactive": false,
+				"metadata": {
+					"doNotExport": false
+				},
+				"children": [],
+				"animatedSprite": {
+					"loop": true,
+					"animationSpeed": 0.1,
+					"textures": [
+						{
+							"imageUrl": "sp_decor_00"
+						},
+						{
+							"imageUrl": "sp_decor_01"
+						},
+						{
+							"imageUrl": "sp_decor_02"
+						},
+						{
+							"imageUrl": "sp_decor_03"
+						},
+						{
+							"imageUrl": "sp_decor_04"
+						},
+						{
+							"imageUrl": "sp_decor_05"
+						},
+						{
+							"imageUrl": "sp_decor_06"
+						},
+						{
+							"imageUrl": "sp_decor_07"
+						}
+					],
+					"durations": [
+						16,
+						16,
+						16,
+						16,
+						16,
+						16,
+						16,
+						16
+					]
+				}
 			}
 		],
 		"stateName": "home",
