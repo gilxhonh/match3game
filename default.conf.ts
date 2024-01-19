@@ -74,7 +74,10 @@ export const config: IGameConfFile<CustomConf> = {
 	gameserver: {
 		lotteryGameCode: "game-itg",
 		services: { "game-itg": "dealers/croupier.json" },
-		stakes: [{ value: 100, currency: "USD" }],
+		stakes: [
+			{ value: 100, currency: "USD" },
+			{ value: 1000, currency: "USD" },
+		],
 		demo: { enabled: true, forceAuthentication: false },
 		selectedBetMode: "BET_MANUAL_CLAIM",
 		selectedTheme: "default",

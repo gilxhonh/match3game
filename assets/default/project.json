@@ -1668,7 +1668,7 @@
 					"docking": {
 						"dock": "centerAll",
 						"x": 0,
-						"y": 188,
+						"y": 170,
 						"cancelPivot": true
 					},
 					"type": "spine.SpineTimelineButton",
@@ -1762,7 +1762,7 @@
 					"docking": {
 						"dock": "centerAll",
 						"x": -140,
-						"y": 0,
+						"y": -60,
 						"cancelPivot": true
 					},
 					"type": "Container",
@@ -1773,6 +1773,1626 @@
 					"interactive": false,
 					"metadata": {},
 					"children": [
+						{
+							"name": "symbol",
+							"x": -28,
+							"y": 25,
+							"rotation": 0,
+							"scaleX": 0.5,
+							"scaleY": 0.5,
+							"pivot": {
+								"x": 0,
+								"y": 0
+							},
+							"type": "spine.SpineTimelineButton",
+							"visible": true,
+							"alpha": 1,
+							"worldAlpha": 1,
+							"buttonMode": true,
+							"interactive": true,
+							"metadata": {},
+							"children": [],
+							"assetId": "03_symbolButton.json",
+							"slots": [
+								{
+									"name": "slotBack",
+									"children": [
+										{
+											"index": 0,
+											"serializationObject": {
+												"name": "backFx",
+												"x": 0,
+												"y": 0,
+												"rotation": 0,
+												"scaleX": 1,
+												"scaleY": -1,
+												"pivot": {
+													"x": 0,
+													"y": 0
+												},
+												"dockingBounds": {
+													"width": 0,
+													"height": 0
+												},
+												"type": "spine.SpineTimeline",
+												"visible": false,
+												"alpha": 1,
+												"worldAlpha": 1,
+												"buttonMode": false,
+												"interactive": false,
+												"metadata": {},
+												"children": [],
+												"assetId": "02_backSymbols.json",
+												"skin": "skin0",
+												"slots": [
+													{
+														"name": "hitArea",
+														"children": []
+													},
+													{
+														"name": "skin",
+														"children": []
+													},
+													{
+														"name": "skin2",
+														"children": []
+													}
+												],
+												"sequences": []
+											}
+										}
+									]
+								},
+								{
+									"name": "slotSymbols",
+									"children": [
+										{
+											"index": 0,
+											"serializationObject": {
+												"name": "planet",
+												"x": 0,
+												"y": 0,
+												"rotation": 0,
+												"scaleX": 1,
+												"scaleY": -1,
+												"pivot": {
+													"x": 0,
+													"y": 0
+												},
+												"dockingBounds": {
+													"width": 100.06512451171875,
+													"height": 100.06512451171875
+												},
+												"type": "spine.SpineTimeline",
+												"visible": true,
+												"alpha": 1,
+												"worldAlpha": 1,
+												"buttonMode": false,
+												"interactive": false,
+												"metadata": {},
+												"children": [],
+												"assetId": "00_symbols.json",
+												"skin": "skin0",
+												"slots": [
+													{
+														"name": "ref_bg",
+														"children": []
+													},
+													{
+														"name": "glowBack",
+														"children": []
+													},
+													{
+														"name": "elipse",
+														"children": []
+													},
+													{
+														"name": "path",
+														"children": []
+													},
+													{
+														"name": "maskPlanet",
+														"children": [
+															{
+																"index": 0,
+																"serializationObject": {
+																	"name": "Container",
+																	"x": 0,
+																	"y": 0,
+																	"rotation": 0,
+																	"scaleX": 1,
+																	"scaleY": 1,
+																	"pivot": {
+																		"x": 0,
+																		"y": 0
+																	},
+																	"type": "Container",
+																	"visible": true,
+																	"alpha": 1,
+																	"worldAlpha": 1,
+																	"buttonMode": false,
+																	"interactive": false,
+																	"metadata": {},
+																	"children": []
+																}
+															},
+															{
+																"index": 1,
+																"serializationObject": {
+																	"name": "Container",
+																	"x": 0,
+																	"y": 0,
+																	"rotation": 0,
+																	"scaleX": 1,
+																	"scaleY": 1,
+																	"pivot": {
+																		"x": 0,
+																		"y": 0
+																	},
+																	"type": "Container",
+																	"visible": true,
+																	"alpha": 1,
+																	"worldAlpha": 1,
+																	"buttonMode": false,
+																	"interactive": false,
+																	"metadata": {},
+																	"children": []
+																}
+															},
+															{
+																"index": 2,
+																"serializationObject": {
+																	"name": "Container",
+																	"x": 0,
+																	"y": 0,
+																	"rotation": 0,
+																	"scaleX": 1,
+																	"scaleY": 1,
+																	"pivot": {
+																		"x": 0,
+																		"y": 0
+																	},
+																	"type": "Container",
+																	"visible": true,
+																	"alpha": 1,
+																	"worldAlpha": 1,
+																	"buttonMode": false,
+																	"interactive": false,
+																	"metadata": {},
+																	"children": []
+																}
+															},
+															{
+																"index": 3,
+																"serializationObject": {
+																	"name": "Container",
+																	"x": 0,
+																	"y": 0,
+																	"rotation": 0,
+																	"scaleX": 1,
+																	"scaleY": 1,
+																	"pivot": {
+																		"x": 0,
+																		"y": 0
+																	},
+																	"type": "Container",
+																	"visible": true,
+																	"alpha": 1,
+																	"worldAlpha": 1,
+																	"buttonMode": false,
+																	"interactive": false,
+																	"metadata": {},
+																	"children": []
+																}
+															},
+															{
+																"index": 4,
+																"serializationObject": {
+																	"name": "Container",
+																	"x": 0,
+																	"y": 0,
+																	"rotation": 0,
+																	"scaleX": 1,
+																	"scaleY": 1,
+																	"pivot": {
+																		"x": 0,
+																		"y": 0
+																	},
+																	"type": "Container",
+																	"visible": true,
+																	"alpha": 1,
+																	"worldAlpha": 1,
+																	"buttonMode": false,
+																	"interactive": false,
+																	"metadata": {},
+																	"children": []
+																}
+															},
+															{
+																"index": 5,
+																"serializationObject": {
+																	"name": "Container",
+																	"x": 0,
+																	"y": 0,
+																	"rotation": 0,
+																	"scaleX": 1,
+																	"scaleY": 1,
+																	"pivot": {
+																		"x": 0,
+																		"y": 0
+																	},
+																	"type": "Container",
+																	"visible": true,
+																	"alpha": 1,
+																	"worldAlpha": 1,
+																	"buttonMode": false,
+																	"interactive": false,
+																	"metadata": {},
+																	"children": []
+																}
+															},
+															{
+																"index": 6,
+																"serializationObject": {
+																	"name": "Container",
+																	"x": 0,
+																	"y": 0,
+																	"rotation": 0,
+																	"scaleX": 1,
+																	"scaleY": 1,
+																	"pivot": {
+																		"x": 0,
+																		"y": 0
+																	},
+																	"type": "Container",
+																	"visible": true,
+																	"alpha": 1,
+																	"worldAlpha": 1,
+																	"buttonMode": false,
+																	"interactive": false,
+																	"metadata": {},
+																	"children": []
+																}
+															},
+															{
+																"index": 7,
+																"serializationObject": {
+																	"name": "Container",
+																	"x": 0,
+																	"y": 0,
+																	"rotation": 0,
+																	"scaleX": 1,
+																	"scaleY": 1,
+																	"pivot": {
+																		"x": 0,
+																		"y": 0
+																	},
+																	"type": "Container",
+																	"visible": true,
+																	"alpha": 1,
+																	"worldAlpha": 1,
+																	"buttonMode": false,
+																	"interactive": false,
+																	"metadata": {},
+																	"children": []
+																}
+															},
+															{
+																"index": 8,
+																"serializationObject": {
+																	"name": "Container",
+																	"x": 0,
+																	"y": 0,
+																	"rotation": 0,
+																	"scaleX": 1,
+																	"scaleY": 1,
+																	"pivot": {
+																		"x": 0,
+																		"y": 0
+																	},
+																	"type": "Container",
+																	"visible": true,
+																	"alpha": 1,
+																	"worldAlpha": 1,
+																	"buttonMode": false,
+																	"interactive": false,
+																	"metadata": {},
+																	"children": []
+																}
+															},
+															{
+																"index": 9,
+																"serializationObject": {
+																	"name": "Container",
+																	"x": 0,
+																	"y": 0,
+																	"rotation": 0,
+																	"scaleX": 1,
+																	"scaleY": 1,
+																	"pivot": {
+																		"x": 0,
+																		"y": 0
+																	},
+																	"type": "Container",
+																	"visible": true,
+																	"alpha": 1,
+																	"worldAlpha": 1,
+																	"buttonMode": false,
+																	"interactive": false,
+																	"metadata": {},
+																	"children": []
+																}
+															},
+															{
+																"index": 10,
+																"serializationObject": {
+																	"name": "Container",
+																	"x": 0,
+																	"y": 0,
+																	"rotation": 0,
+																	"scaleX": 1,
+																	"scaleY": 1,
+																	"pivot": {
+																		"x": 0,
+																		"y": 0
+																	},
+																	"type": "Container",
+																	"visible": true,
+																	"alpha": 1,
+																	"worldAlpha": 1,
+																	"buttonMode": false,
+																	"interactive": false,
+																	"metadata": {},
+																	"children": []
+																}
+															},
+															{
+																"index": 11,
+																"serializationObject": {
+																	"name": "Container",
+																	"x": 0,
+																	"y": 0,
+																	"rotation": 0,
+																	"scaleX": 1,
+																	"scaleY": 1,
+																	"pivot": {
+																		"x": 0,
+																		"y": 0
+																	},
+																	"type": "Container",
+																	"visible": true,
+																	"alpha": 1,
+																	"worldAlpha": 1,
+																	"buttonMode": false,
+																	"interactive": false,
+																	"metadata": {},
+																	"children": []
+																}
+															},
+															{
+																"index": 12,
+																"serializationObject": {
+																	"name": "Container",
+																	"x": 0,
+																	"y": 0,
+																	"rotation": 0,
+																	"scaleX": 1,
+																	"scaleY": 1,
+																	"pivot": {
+																		"x": 0,
+																		"y": 0
+																	},
+																	"type": "Container",
+																	"visible": true,
+																	"alpha": 1,
+																	"worldAlpha": 1,
+																	"buttonMode": false,
+																	"interactive": false,
+																	"metadata": {},
+																	"children": []
+																}
+															},
+															{
+																"index": 13,
+																"serializationObject": {
+																	"name": "Container",
+																	"x": 0,
+																	"y": 0,
+																	"rotation": 0,
+																	"scaleX": 1,
+																	"scaleY": 1,
+																	"pivot": {
+																		"x": 0,
+																		"y": 0
+																	},
+																	"type": "Container",
+																	"visible": true,
+																	"alpha": 1,
+																	"worldAlpha": 1,
+																	"buttonMode": false,
+																	"interactive": false,
+																	"metadata": {},
+																	"children": []
+																}
+															},
+															{
+																"index": 14,
+																"serializationObject": {
+																	"name": "Container",
+																	"x": 0,
+																	"y": 0,
+																	"rotation": 0,
+																	"scaleX": 1,
+																	"scaleY": 1,
+																	"pivot": {
+																		"x": 0,
+																		"y": 0
+																	},
+																	"type": "Container",
+																	"visible": true,
+																	"alpha": 1,
+																	"worldAlpha": 1,
+																	"buttonMode": false,
+																	"interactive": false,
+																	"metadata": {},
+																	"children": []
+																}
+															},
+															{
+																"index": 15,
+																"serializationObject": {
+																	"name": "Container",
+																	"x": 0,
+																	"y": 0,
+																	"rotation": 0,
+																	"scaleX": 1,
+																	"scaleY": 1,
+																	"pivot": {
+																		"x": 0,
+																		"y": 0
+																	},
+																	"type": "Container",
+																	"visible": true,
+																	"alpha": 1,
+																	"worldAlpha": 1,
+																	"buttonMode": false,
+																	"interactive": false,
+																	"metadata": {},
+																	"children": []
+																}
+															},
+															{
+																"index": 16,
+																"serializationObject": {
+																	"name": "Container",
+																	"x": 0,
+																	"y": 0,
+																	"rotation": 0,
+																	"scaleX": 1,
+																	"scaleY": 1,
+																	"pivot": {
+																		"x": 0,
+																		"y": 0
+																	},
+																	"type": "Container",
+																	"visible": true,
+																	"alpha": 1,
+																	"worldAlpha": 1,
+																	"buttonMode": false,
+																	"interactive": false,
+																	"metadata": {},
+																	"children": []
+																}
+															},
+															{
+																"index": 17,
+																"serializationObject": {
+																	"name": "Container",
+																	"x": 0,
+																	"y": 0,
+																	"rotation": 0,
+																	"scaleX": 1,
+																	"scaleY": 1,
+																	"pivot": {
+																		"x": 0,
+																		"y": 0
+																	},
+																	"type": "Container",
+																	"visible": true,
+																	"alpha": 1,
+																	"worldAlpha": 1,
+																	"buttonMode": false,
+																	"interactive": false,
+																	"metadata": {},
+																	"children": []
+																}
+															},
+															{
+																"index": 18,
+																"serializationObject": {
+																	"name": "Container",
+																	"x": 0,
+																	"y": 0,
+																	"rotation": 0,
+																	"scaleX": 1,
+																	"scaleY": 1,
+																	"pivot": {
+																		"x": 0,
+																		"y": 0
+																	},
+																	"type": "Container",
+																	"visible": true,
+																	"alpha": 1,
+																	"worldAlpha": 1,
+																	"buttonMode": false,
+																	"interactive": false,
+																	"metadata": {},
+																	"children": []
+																}
+															},
+															{
+																"index": 19,
+																"serializationObject": {
+																	"name": "Container",
+																	"x": 0,
+																	"y": 0,
+																	"rotation": 0,
+																	"scaleX": 1,
+																	"scaleY": 1,
+																	"pivot": {
+																		"x": 0,
+																		"y": 0
+																	},
+																	"type": "Container",
+																	"visible": true,
+																	"alpha": 1,
+																	"worldAlpha": 1,
+																	"buttonMode": false,
+																	"interactive": false,
+																	"metadata": {},
+																	"children": []
+																}
+															},
+															{
+																"index": 20,
+																"serializationObject": {
+																	"name": "Container",
+																	"x": 0,
+																	"y": 0,
+																	"rotation": 0,
+																	"scaleX": 1,
+																	"scaleY": 1,
+																	"pivot": {
+																		"x": 0,
+																		"y": 0
+																	},
+																	"type": "Container",
+																	"visible": true,
+																	"alpha": 1,
+																	"worldAlpha": 1,
+																	"buttonMode": false,
+																	"interactive": false,
+																	"metadata": {},
+																	"children": []
+																}
+															},
+															{
+																"index": 21,
+																"serializationObject": {
+																	"name": "Container",
+																	"x": 0,
+																	"y": 0,
+																	"rotation": 0,
+																	"scaleX": 1,
+																	"scaleY": 1,
+																	"pivot": {
+																		"x": 0,
+																		"y": 0
+																	},
+																	"type": "Container",
+																	"visible": true,
+																	"alpha": 1,
+																	"worldAlpha": 1,
+																	"buttonMode": false,
+																	"interactive": false,
+																	"metadata": {},
+																	"children": []
+																}
+															},
+															{
+																"index": 22,
+																"serializationObject": {
+																	"name": "Container",
+																	"x": 0,
+																	"y": 0,
+																	"rotation": 0,
+																	"scaleX": 1,
+																	"scaleY": 1,
+																	"pivot": {
+																		"x": 0,
+																		"y": 0
+																	},
+																	"type": "Container",
+																	"visible": true,
+																	"alpha": 1,
+																	"worldAlpha": 1,
+																	"buttonMode": false,
+																	"interactive": false,
+																	"metadata": {},
+																	"children": []
+																}
+															}
+														]
+													},
+													{
+														"name": "textureFront",
+														"children": []
+													},
+													{
+														"name": "skin",
+														"children": []
+													},
+													{
+														"name": "skin_clouds",
+														"children": []
+													},
+													{
+														"name": "skin_clouds2",
+														"children": []
+													},
+													{
+														"name": "glowFront",
+														"children": []
+													},
+													{
+														"name": "light",
+														"children": []
+													},
+													{
+														"name": "shadow",
+														"children": []
+													},
+													{
+														"name": "AO",
+														"children": []
+													},
+													{
+														"name": "shadowSatellite",
+														"children": []
+													},
+													{
+														"name": "skinSatellite",
+														"children": []
+													},
+													{
+														"name": "maskRing",
+														"children": [
+															{
+																"index": 0,
+																"serializationObject": {
+																	"name": "Container",
+																	"x": 0,
+																	"y": 0,
+																	"rotation": 0,
+																	"scaleX": 1,
+																	"scaleY": 1,
+																	"pivot": {
+																		"x": 0,
+																		"y": 0
+																	},
+																	"type": "Container",
+																	"visible": true,
+																	"alpha": 1,
+																	"worldAlpha": 1,
+																	"buttonMode": false,
+																	"interactive": false,
+																	"metadata": {},
+																	"children": []
+																}
+															},
+															{
+																"index": 1,
+																"serializationObject": {
+																	"name": "Container",
+																	"x": 0,
+																	"y": 0,
+																	"rotation": 0,
+																	"scaleX": 1,
+																	"scaleY": 1,
+																	"pivot": {
+																		"x": 0,
+																		"y": 0
+																	},
+																	"type": "Container",
+																	"visible": true,
+																	"alpha": 1,
+																	"worldAlpha": 1,
+																	"buttonMode": false,
+																	"interactive": false,
+																	"metadata": {},
+																	"children": []
+																}
+															},
+															{
+																"index": 2,
+																"serializationObject": {
+																	"name": "Container",
+																	"x": 0,
+																	"y": 0,
+																	"rotation": 0,
+																	"scaleX": 1,
+																	"scaleY": 1,
+																	"pivot": {
+																		"x": 0,
+																		"y": 0
+																	},
+																	"type": "Container",
+																	"visible": true,
+																	"alpha": 1,
+																	"worldAlpha": 1,
+																	"buttonMode": false,
+																	"interactive": false,
+																	"metadata": {},
+																	"children": []
+																}
+															},
+															{
+																"index": 3,
+																"serializationObject": {
+																	"name": "Container",
+																	"x": 0,
+																	"y": 0,
+																	"rotation": 0,
+																	"scaleX": 1,
+																	"scaleY": 1,
+																	"pivot": {
+																		"x": 0,
+																		"y": 0
+																	},
+																	"type": "Container",
+																	"visible": true,
+																	"alpha": 1,
+																	"worldAlpha": 1,
+																	"buttonMode": false,
+																	"interactive": false,
+																	"metadata": {},
+																	"children": []
+																}
+															},
+															{
+																"index": 4,
+																"serializationObject": {
+																	"name": "Container",
+																	"x": 0,
+																	"y": 0,
+																	"rotation": 0,
+																	"scaleX": 1,
+																	"scaleY": 1,
+																	"pivot": {
+																		"x": 0,
+																		"y": 0
+																	},
+																	"type": "Container",
+																	"visible": true,
+																	"alpha": 1,
+																	"worldAlpha": 1,
+																	"buttonMode": false,
+																	"interactive": false,
+																	"metadata": {},
+																	"children": []
+																}
+															},
+															{
+																"index": 5,
+																"serializationObject": {
+																	"name": "Container",
+																	"x": 0,
+																	"y": 0,
+																	"rotation": 0,
+																	"scaleX": 1,
+																	"scaleY": 1,
+																	"pivot": {
+																		"x": 0,
+																		"y": 0
+																	},
+																	"type": "Container",
+																	"visible": true,
+																	"alpha": 1,
+																	"worldAlpha": 1,
+																	"buttonMode": false,
+																	"interactive": false,
+																	"metadata": {},
+																	"children": []
+																}
+															},
+															{
+																"index": 6,
+																"serializationObject": {
+																	"name": "Container",
+																	"x": 0,
+																	"y": 0,
+																	"rotation": 0,
+																	"scaleX": 1,
+																	"scaleY": 1,
+																	"pivot": {
+																		"x": 0,
+																		"y": 0
+																	},
+																	"type": "Container",
+																	"visible": true,
+																	"alpha": 1,
+																	"worldAlpha": 1,
+																	"buttonMode": false,
+																	"interactive": false,
+																	"metadata": {},
+																	"children": []
+																}
+															},
+															{
+																"index": 7,
+																"serializationObject": {
+																	"name": "Container",
+																	"x": 0,
+																	"y": 0,
+																	"rotation": 0,
+																	"scaleX": 1,
+																	"scaleY": 1,
+																	"pivot": {
+																		"x": 0,
+																		"y": 0
+																	},
+																	"type": "Container",
+																	"visible": true,
+																	"alpha": 1,
+																	"worldAlpha": 1,
+																	"buttonMode": false,
+																	"interactive": false,
+																	"metadata": {},
+																	"children": []
+																}
+															},
+															{
+																"index": 8,
+																"serializationObject": {
+																	"name": "Container",
+																	"x": 0,
+																	"y": 0,
+																	"rotation": 0,
+																	"scaleX": 1,
+																	"scaleY": 1,
+																	"pivot": {
+																		"x": 0,
+																		"y": 0
+																	},
+																	"type": "Container",
+																	"visible": true,
+																	"alpha": 1,
+																	"worldAlpha": 1,
+																	"buttonMode": false,
+																	"interactive": false,
+																	"metadata": {},
+																	"children": []
+																}
+															},
+															{
+																"index": 9,
+																"serializationObject": {
+																	"name": "Container",
+																	"x": 0,
+																	"y": 0,
+																	"rotation": 0,
+																	"scaleX": 1,
+																	"scaleY": 1,
+																	"pivot": {
+																		"x": 0,
+																		"y": 0
+																	},
+																	"type": "Container",
+																	"visible": true,
+																	"alpha": 1,
+																	"worldAlpha": 1,
+																	"buttonMode": false,
+																	"interactive": false,
+																	"metadata": {},
+																	"children": []
+																}
+															},
+															{
+																"index": 10,
+																"serializationObject": {
+																	"name": "Container",
+																	"x": 0,
+																	"y": 0,
+																	"rotation": 0,
+																	"scaleX": 1,
+																	"scaleY": 1,
+																	"pivot": {
+																		"x": 0,
+																		"y": 0
+																	},
+																	"type": "Container",
+																	"visible": true,
+																	"alpha": 1,
+																	"worldAlpha": 1,
+																	"buttonMode": false,
+																	"interactive": false,
+																	"metadata": {},
+																	"children": []
+																}
+															},
+															{
+																"index": 11,
+																"serializationObject": {
+																	"name": "Container",
+																	"x": 0,
+																	"y": 0,
+																	"rotation": 0,
+																	"scaleX": 1,
+																	"scaleY": 1,
+																	"pivot": {
+																		"x": 0,
+																		"y": 0
+																	},
+																	"type": "Container",
+																	"visible": true,
+																	"alpha": 1,
+																	"worldAlpha": 1,
+																	"buttonMode": false,
+																	"interactive": false,
+																	"metadata": {},
+																	"children": []
+																}
+															},
+															{
+																"index": 12,
+																"serializationObject": {
+																	"name": "Container",
+																	"x": 0,
+																	"y": 0,
+																	"rotation": 0,
+																	"scaleX": 1,
+																	"scaleY": 1,
+																	"pivot": {
+																		"x": 0,
+																		"y": 0
+																	},
+																	"type": "Container",
+																	"visible": true,
+																	"alpha": 1,
+																	"worldAlpha": 1,
+																	"buttonMode": false,
+																	"interactive": false,
+																	"metadata": {},
+																	"children": []
+																}
+															},
+															{
+																"index": 13,
+																"serializationObject": {
+																	"name": "Container",
+																	"x": 0,
+																	"y": 0,
+																	"rotation": 0,
+																	"scaleX": 1,
+																	"scaleY": 1,
+																	"pivot": {
+																		"x": 0,
+																		"y": 0
+																	},
+																	"type": "Container",
+																	"visible": true,
+																	"alpha": 1,
+																	"worldAlpha": 1,
+																	"buttonMode": false,
+																	"interactive": false,
+																	"metadata": {},
+																	"children": []
+																}
+															},
+															{
+																"index": 14,
+																"serializationObject": {
+																	"name": "Container",
+																	"x": 0,
+																	"y": 0,
+																	"rotation": 0,
+																	"scaleX": 1,
+																	"scaleY": 1,
+																	"pivot": {
+																		"x": 0,
+																		"y": 0
+																	},
+																	"type": "Container",
+																	"visible": true,
+																	"alpha": 1,
+																	"worldAlpha": 1,
+																	"buttonMode": false,
+																	"interactive": false,
+																	"metadata": {},
+																	"children": []
+																}
+															},
+															{
+																"index": 15,
+																"serializationObject": {
+																	"name": "Container",
+																	"x": 0,
+																	"y": 0,
+																	"rotation": 0,
+																	"scaleX": 1,
+																	"scaleY": 1,
+																	"pivot": {
+																		"x": 0,
+																		"y": 0
+																	},
+																	"type": "Container",
+																	"visible": true,
+																	"alpha": 1,
+																	"worldAlpha": 1,
+																	"buttonMode": false,
+																	"interactive": false,
+																	"metadata": {},
+																	"children": []
+																}
+															},
+															{
+																"index": 16,
+																"serializationObject": {
+																	"name": "Container",
+																	"x": 0,
+																	"y": 0,
+																	"rotation": 0,
+																	"scaleX": 1,
+																	"scaleY": 1,
+																	"pivot": {
+																		"x": 0,
+																		"y": 0
+																	},
+																	"type": "Container",
+																	"visible": true,
+																	"alpha": 1,
+																	"worldAlpha": 1,
+																	"buttonMode": false,
+																	"interactive": false,
+																	"metadata": {},
+																	"children": []
+																}
+															},
+															{
+																"index": 17,
+																"serializationObject": {
+																	"name": "Container",
+																	"x": 0,
+																	"y": 0,
+																	"rotation": 0,
+																	"scaleX": 1,
+																	"scaleY": 1,
+																	"pivot": {
+																		"x": 0,
+																		"y": 0
+																	},
+																	"type": "Container",
+																	"visible": true,
+																	"alpha": 1,
+																	"worldAlpha": 1,
+																	"buttonMode": false,
+																	"interactive": false,
+																	"metadata": {},
+																	"children": []
+																}
+															},
+															{
+																"index": 18,
+																"serializationObject": {
+																	"name": "Container",
+																	"x": 0,
+																	"y": 0,
+																	"rotation": 0,
+																	"scaleX": 1,
+																	"scaleY": 1,
+																	"pivot": {
+																		"x": 0,
+																		"y": 0
+																	},
+																	"type": "Container",
+																	"visible": true,
+																	"alpha": 1,
+																	"worldAlpha": 1,
+																	"buttonMode": false,
+																	"interactive": false,
+																	"metadata": {},
+																	"children": []
+																}
+															},
+															{
+																"index": 19,
+																"serializationObject": {
+																	"name": "Container",
+																	"x": 0,
+																	"y": 0,
+																	"rotation": 0,
+																	"scaleX": 1,
+																	"scaleY": 1,
+																	"pivot": {
+																		"x": 0,
+																		"y": 0
+																	},
+																	"type": "Container",
+																	"visible": true,
+																	"alpha": 1,
+																	"worldAlpha": 1,
+																	"buttonMode": false,
+																	"interactive": false,
+																	"metadata": {},
+																	"children": []
+																}
+															},
+															{
+																"index": 20,
+																"serializationObject": {
+																	"name": "Container",
+																	"x": 0,
+																	"y": 0,
+																	"rotation": 0,
+																	"scaleX": 1,
+																	"scaleY": 1,
+																	"pivot": {
+																		"x": 0,
+																		"y": 0
+																	},
+																	"type": "Container",
+																	"visible": true,
+																	"alpha": 1,
+																	"worldAlpha": 1,
+																	"buttonMode": false,
+																	"interactive": false,
+																	"metadata": {},
+																	"children": []
+																}
+															},
+															{
+																"index": 21,
+																"serializationObject": {
+																	"name": "Container",
+																	"x": 0,
+																	"y": 0,
+																	"rotation": 0,
+																	"scaleX": 1,
+																	"scaleY": 1,
+																	"pivot": {
+																		"x": 0,
+																		"y": 0
+																	},
+																	"type": "Container",
+																	"visible": true,
+																	"alpha": 1,
+																	"worldAlpha": 1,
+																	"buttonMode": false,
+																	"interactive": false,
+																	"metadata": {},
+																	"children": []
+																}
+															},
+															{
+																"index": 22,
+																"serializationObject": {
+																	"name": "Container",
+																	"x": 0,
+																	"y": 0,
+																	"rotation": 0,
+																	"scaleX": 1,
+																	"scaleY": 1,
+																	"pivot": {
+																		"x": 0,
+																		"y": 0
+																	},
+																	"type": "Container",
+																	"visible": true,
+																	"alpha": 1,
+																	"worldAlpha": 1,
+																	"buttonMode": false,
+																	"interactive": false,
+																	"metadata": {},
+																	"children": []
+																}
+															}
+														]
+													},
+													{
+														"name": "ring",
+														"children": []
+													},
+													{
+														"name": "hitArea",
+														"children": []
+													}
+												],
+												"sequences": []
+											}
+										}
+									]
+								},
+								{
+									"name": "slotReveal",
+									"children": [
+										{
+											"index": 0,
+											"serializationObject": {
+												"name": "reveal",
+												"x": 0,
+												"y": 0,
+												"rotation": 0,
+												"scaleX": 1,
+												"scaleY": -1,
+												"pivot": {
+													"x": 287,
+													"y": 228.60000610351562
+												},
+												"dockingBounds": {
+													"width": 575,
+													"height": 457.20001220703125
+												},
+												"type": "spine.SpineTimeline",
+												"visible": false,
+												"alpha": 1,
+												"worldAlpha": 1,
+												"buttonMode": false,
+												"interactive": false,
+												"metadata": {},
+												"children": [],
+												"assetId": "01_reveal.json",
+												"slots": [
+													{
+														"name": "burstFx",
+														"children": []
+													},
+													{
+														"name": "winFx",
+														"children": []
+													},
+													{
+														"name": "particle0",
+														"children": []
+													},
+													{
+														"name": "particle8",
+														"children": []
+													},
+													{
+														"name": "particle9",
+														"children": []
+													},
+													{
+														"name": "particle6",
+														"children": []
+													},
+													{
+														"name": "particle1",
+														"children": []
+													},
+													{
+														"name": "particle10",
+														"children": []
+													},
+													{
+														"name": "particle11",
+														"children": []
+													},
+													{
+														"name": "particle7",
+														"children": []
+													},
+													{
+														"name": "particle2",
+														"children": []
+													},
+													{
+														"name": "particle4",
+														"children": []
+													},
+													{
+														"name": "particle3",
+														"children": []
+													},
+													{
+														"name": "particle5",
+														"children": []
+													},
+													{
+														"name": "hitArea",
+														"children": []
+													},
+													{
+														"name": "textLose",
+														"children": [
+															{
+																"index": 0,
+																"serializationObject": {
+																	"name": "text",
+																	"x": -80,
+																	"y": -40,
+																	"rotation": 0,
+																	"scaleX": 1,
+																	"scaleY": -1,
+																	"pivot": {
+																		"x": 203,
+																		"y": 110.1
+																	},
+																	"type": "ui.TextField",
+																	"visible": true,
+																	"alpha": 1,
+																	"worldAlpha": 1,
+																	"buttonMode": false,
+																	"interactive": false,
+																	"metadata": {},
+																	"children": [],
+																	"text": "100.-",
+																	"styles": {
+																		"default": {
+																			"fontName": "RifficFree-Bold",
+																			"fontSize": 100,
+																			"fill": "#000000",
+																			"stroke": "#003366",
+																			"strokeOffsetX": 0,
+																			"strokeOffsetY": 0,
+																			"strokeWidth": 3,
+																			"interLine": 0,
+																			"shadowColor": "#003366",
+																			"shadowOffsetX": 0,
+																			"shadowOffsetY": 6,
+																			"shadowBlur": 0,
+																			"miterLimit": 0,
+																			"underlineDistance": 0,
+																			"underlineWeight": 0,
+																			"fillStyle": {
+																				"type": 1,
+																				"steps": [
+																					{
+																						"ratio": 0.45,
+																						"color": "#ffffff"
+																					},
+																					{
+																						"ratio": 0.75,
+																						"color": "#99ccff"
+																					}
+																				]
+																			}
+																		}
+																	},
+																	"hitAreaLevel": 0,
+																	"hitAreaPoint": {
+																		"x": 0,
+																		"y": 0
+																	},
+																	"width": 600,
+																	"height": 0,
+																	"options": {
+																		"align": 2,
+																		"padding": null,
+																		"interLine": 0,
+																		"wordWrap": true
+																	},
+																	"i18nKey": null
+																}
+															}
+														]
+													},
+													{
+														"name": "textWin",
+														"children": [
+															{
+																"index": 1,
+																"serializationObject": {
+																	"name": "text",
+																	"x": -80,
+																	"y": -40,
+																	"rotation": 0,
+																	"scaleX": 1,
+																	"scaleY": -1,
+																	"pivot": {
+																		"x": 203,
+																		"y": 110.1
+																	},
+																	"type": "ui.TextField",
+																	"visible": true,
+																	"alpha": 1,
+																	"worldAlpha": 1,
+																	"buttonMode": false,
+																	"interactive": false,
+																	"metadata": {},
+																	"children": [],
+																	"text": "100.-",
+																	"styles": {
+																		"default": {
+																			"fontName": "RifficFree-Bold",
+																			"fontSize": 100,
+																			"fill": "#000000",
+																			"stroke": "#80401e",
+																			"strokeOffsetX": 0,
+																			"strokeOffsetY": 0,
+																			"strokeWidth": 3,
+																			"interLine": 0,
+																			"shadowColor": "#4d1f13",
+																			"shadowOffsetX": 0,
+																			"shadowOffsetY": 6,
+																			"shadowBlur": 0,
+																			"miterLimit": 0,
+																			"underlineDistance": 0,
+																			"underlineWeight": 0,
+																			"fillStyle": {
+																				"type": 1,
+																				"steps": [
+																					{
+																						"ratio": 0,
+																						"color": "#fff355"
+																					},
+																					{
+																						"ratio": 0.23,
+																						"color": "#fff355"
+																					},
+																					{
+																						"ratio": 0.55,
+																						"color": "#e8a400"
+																					},
+																					{
+																						"ratio": 0.58,
+																						"color": "#f6f0d8"
+																					},
+																					{
+																						"ratio": 1,
+																						"color": "#ffce57"
+																					}
+																				]
+																			}
+																		}
+																	},
+																	"hitAreaLevel": 0,
+																	"hitAreaPoint": {
+																		"x": 0,
+																		"y": 0
+																	},
+																	"width": 600,
+																	"height": 0,
+																	"options": {
+																		"align": 2,
+																		"padding": null,
+																		"interLine": 0,
+																		"wordWrap": true
+																	},
+																	"i18nKey": null
+																}
+															}
+														]
+													},
+													{
+														"name": "multiplier",
+														"children": [
+															{
+																"index": 0,
+																"serializationObject": {
+																	"name": "text",
+																	"x": -80,
+																	"y": -40,
+																	"rotation": 0,
+																	"scaleX": 1,
+																	"scaleY": -1,
+																	"pivot": {
+																		"x": 203,
+																		"y": 110.1
+																	},
+																	"type": "ui.TextField",
+																	"visible": true,
+																	"alpha": 1,
+																	"worldAlpha": 1,
+																	"buttonMode": false,
+																	"interactive": false,
+																	"metadata": {},
+																	"children": [],
+																	"text": "X2",
+																	"styles": {
+																		"default": {
+																			"fontName": "RifficFree-Bold",
+																			"fontSize": 100,
+																			"fill": "#000000",
+																			"stroke": "#80401e",
+																			"strokeOffsetX": 0,
+																			"strokeOffsetY": 0,
+																			"strokeWidth": 3,
+																			"interLine": 0,
+																			"shadowColor": "#4d1f13",
+																			"shadowOffsetX": 0,
+																			"shadowOffsetY": 6,
+																			"shadowBlur": 0,
+																			"miterLimit": 0,
+																			"underlineDistance": 0,
+																			"underlineWeight": 0,
+																			"fillStyle": {
+																				"type": 1,
+																				"steps": [
+																					{
+																						"ratio": 0,
+																						"color": "#fff355"
+																					},
+																					{
+																						"ratio": 0.23,
+																						"color": "#fff355"
+																					},
+																					{
+																						"ratio": 0.55,
+																						"color": "#e8a400"
+																					},
+																					{
+																						"ratio": 0.58,
+																						"color": "#f6f0d8"
+																					},
+																					{
+																						"ratio": 1,
+																						"color": "#ffce57"
+																					}
+																				]
+																			}
+																		}
+																	},
+																	"hitAreaLevel": 0,
+																	"hitAreaPoint": {
+																		"x": 0,
+																		"y": 0
+																	},
+																	"width": 560,
+																	"height": 0,
+																	"options": {
+																		"align": 2,
+																		"padding": null,
+																		"interLine": 0,
+																		"wordWrap": true
+																	},
+																	"i18nKey": null
+																}
+															}
+														]
+													}
+												],
+												"sequences": []
+											}
+										}
+									]
+								}
+							],
+							"sequences": [],
+							"animationsNames": {
+								"enter": "enter",
+								"exit": "exit",
+								"disable": "disable",
+								"disableLoop": "disableLoop",
+								"idle": "idle",
+								"idleLoop": "idleLoop",
+								"over": "over",
+								"overLoop": "overLoop",
+								"out": "out",
+								"down": "down",
+								"downLoop": "downLoop",
+								"up": "up",
+								"callToAction": "calltoaction"
+							},
+							"loopOnIdle": false,
+							"loopOnDown": false,
+							"loopOnOver": false,
+							"loopOnDisable": false,
+							"styles": {
+								"default": {
+									"fontName": "Arial",
+									"fontSize": 24,
+									"fill": "#ffffff"
+								}
+							},
+							"label": "",
+							"callToActionDelay": {
+								"min": 5,
+								"max": 5
+							},
+							"callToActionEnabled": false,
+							"trackingName": ""
+						},
 						{
 							"name": "cell1",
 							"x": 0,
@@ -1785,7 +3405,7 @@
 								"y": 0
 							},
 							"type": "Graphics",
-							"visible": true,
+							"visible": false,
 							"alpha": 1,
 							"worldAlpha": 1,
 							"buttonMode": false,
@@ -1874,7 +3494,7 @@
 					"docking": {
 						"dock": "centerAll",
 						"x": 0,
-						"y": 0,
+						"y": -60,
 						"cancelPivot": true
 					},
 					"type": "Container",
@@ -1986,7 +3606,7 @@
 					"docking": {
 						"dock": "centerAll",
 						"x": 140,
-						"y": 0,
+						"y": -60,
 						"cancelPivot": true
 					},
 					"type": "Container",
