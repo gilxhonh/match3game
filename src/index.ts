@@ -1,6 +1,5 @@
-import { State } from "@gdk/core";
+import type { State, IAmount, IGameConf } from "@gdk/core";
 import { ETicketMode, Express } from "@gdk/gamekit";
-import type { IAmount, IGameConf } from "@gdk/core";
 import { fromEditor } from "@gdk/core-pixi";
 
 import { Ticket } from "./ticket";
@@ -12,7 +11,7 @@ import { RevealView } from "./revealView";
 import { ResultView } from "./resultView";
 import type { CustomConf } from "../default.conf";
 
-const DEFAULT_VIEWS = [ "splash", "rules", "home", "reveal", "result" ];
+const DEFAULT_VIEWS = ["splash", "rules", "home", "reveal", "result"];
 
 export interface NewGameOptions {
 	ticket?: Ticket;
@@ -91,19 +90,16 @@ export default class Game extends Express<CustomConf> {
 		// TODO
 	}
 
- 	protected async setTicket(ticket: null | Ticket): Promise<void> {
+	protected async setTicket(ticket: null | Ticket): Promise<void> {
 		this.ticket = ticket;
 
 		if (ticket !== null) {
-			await Promise.all([
-				this.views.reveal.setTicket(ticket),
-				this.views.result.setTicket(ticket)
-			]);
+			await Promise.all([this.views.reveal.setTicket(ticket), this.views.result.setTicket(ticket)]);
 		}
 	}
 
 	protected async changeState(currentView: string, nextView: string): Promise<void> {
-		switch(currentView) {
+		switch (currentView) {
 			case "rules":
 				await this.rules.exit();
 				await this.com.bridge.emitEvent("JACKPOT_SHOW_RULES");
@@ -115,9 +111,11 @@ export default class Game extends Express<CustomConf> {
 		}
 
 		// game end hook
-		if (this.ticket !== null
-			&& ["result", "reveal"].includes(currentView)
-			&& !["result", "reveal"].includes(nextView)) {
+		if (
+			this.ticket !== null &&
+			["result", "reveal"].includes(currentView) &&
+			!["result", "reveal"].includes(nextView)
+		) {
 			const replayParams = await this.gameEndHook(this.ticket.ticket);
 			if (replayParams !== undefined) {
 				await this.onPlay(replayParams);
@@ -131,7 +129,9 @@ export default class Game extends Express<CustomConf> {
 				break;
 			case "rules":
 				await this.rules.enter();
-				this.rules.once("done", () => { this.state.next(); })
+				this.rules.once("done", () => {
+					this.state.next();
+				});
 				break;
 			case "home":
 				// reset home ticket when it's claiemd
@@ -224,7 +224,7 @@ export default class Game extends Express<CustomConf> {
 		if (itgTicket !== undefined) {
 			const mode = itgTicket.status === "CLAIMED" ? "replay" : "resume";
 
-			if (mode === "resume" && ! await this.resumeHook(itgTicket)) {
+			if (mode === "resume" && !(await this.resumeHook(itgTicket))) {
 				return null;
 			}
 

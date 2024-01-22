@@ -42,12 +42,16 @@ export class RevealCell extends Container {
 		});
 
 		this.on("mouseover", () => {
-			backFx.visible = true;
-			backFx.timeScale = 3;
-			void utils.fadeIn(backFx);
-			void backFx.playDirect("overEnter", false).then(() => {
-				void backFx.playDirect("overIdle", true);
-			});
+			if (!this.revealed) {
+				backFx.visible = true;
+				backFx.timeScale = 3;
+				void utils.fadeIn(backFx);
+				void backFx.playDirect("overEnter", false).then(() => {
+					void backFx.playDirect("overIdle", true);
+				});
+			} else {
+				this.locked = true;
+			}
 		});
 
 		this.on("mouseout", () => {

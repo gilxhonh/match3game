@@ -30,8 +30,8 @@
 			{
 				"name": "autoButton",
 				"rotation": 0,
-				"scaleX": 1,
-				"scaleY": 1,
+				"scaleX": 0.9,
+				"scaleY": 0.9,
 				"pivot": {
 					"x": 0,
 					"y": 0
@@ -138,7 +138,7 @@
 				},
 				"docking": {
 					"dock": "centerAll",
-					"x": -140,
+					"x": -210,
 					"y": -80,
 					"cancelPivot": true
 				},
@@ -4082,7 +4082,7 @@
 				},
 				"docking": {
 					"dock": "centerAll",
-					"x": 140,
+					"x": 210,
 					"y": -80,
 					"cancelPivot": true
 				},
