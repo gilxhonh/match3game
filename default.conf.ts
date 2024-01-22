@@ -25,7 +25,7 @@ export const config: IGameConfFile<CustomConf> = {
 			vi: "fdj",
 			enablePreBetHook: false,
 			enableResumeHook: true,
-			enableGameEndHook: true,
+			enableGameEndHook: false,
 			viSkipIntroduction: true,
 			views: ["splash", "rules", "home", "reveal", "result", "home"],
 		},

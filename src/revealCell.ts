@@ -3,6 +3,8 @@ import { fromEditor } from "@gdk/core-pixi";
 import { Amount } from "@gdk/core";
 import type { IAmount } from "@gdk/core";
 import type { TextField } from "@gdk/core-pixi";
+import type { SpineTimelineButton } from "@gdk/core-pixi/spine2/button";
+import type { SpineTimeline } from "@gdk/core-pixi/spine2/timeline";
 
 import * as utils from "./utils";
 
@@ -16,13 +18,40 @@ export class RevealCell extends Container {
 	@fromEditor("amount")
 	public amount!: TextField;
 
+	@fromEditor("symbol")
+	public symbol!: SpineTimelineButton;
+
 	protected _revealed = false;
 	protected _winning = false;
 
 	public onLoaded(): void {
+		const backFx: SpineTimeline = this.symbol
+			.getSlotContainerByName("slotBack")
+			.getChildByName("backFx");
+
+		//remove all listners
+		this.removeAllListeners();
+
+		//reset backFx visibility
+		backFx.visible = false;
+
 		// TO BE COMPLETED
 		this.on("pointertap", () => {
 			void this.reveal(true);
+			void utils.fadeOut(backFx);
+		});
+
+		this.on("mouseover", () => {
+			backFx.visible = true;
+			backFx.timeScale = 3;
+			void utils.fadeIn(backFx);
+			void backFx.playDirect("overEnter", false).then(() => {
+				void backFx.playDirect("overIdle", true);
+			});
+		});
+
+		this.on("mouseout", () => {
+			void utils.fadeOut(backFx);
 		});
 	}
 
@@ -97,6 +126,12 @@ export class RevealCell extends Container {
 	public async enter(delay = 0): Promise<void> {
 		// TO BE COMPLETED: cell enter animation
 		await utils.fallIn(this, delay);
+
+		const planet: SpineTimeline = this.symbol
+			.getSlotContainerByName("slotSymbols")
+			.getChildByName("planet");
+
+		void planet.playDirect("idle", true);
 
 		this.locked = false;
 	}

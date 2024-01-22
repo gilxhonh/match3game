@@ -795,7 +795,6 @@
 									"options": {
 										"align": 0,
 										"padding": null,
-										"interLine": 0,
 										"wordWrap": false
 									},
 									"i18nKey": null
