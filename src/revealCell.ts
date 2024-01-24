@@ -82,7 +82,15 @@ export class RevealCell extends Container {
 		this.locked = false;
 
 		// TO BE COMPLETED: unreveal cell
+
 		this.amount.visible = false;
+
+		//hide cell symbol
+		const revealFx: SpineTimeline = this.symbol
+			.getSlotContainerByName("slotReveal")
+			.getChildByName("reveal");
+
+		revealFx.visible = false;
 
 		// TO BE COMPLETED: load rank data
 		this.amount.text = new Amount({
@@ -96,6 +104,21 @@ export class RevealCell extends Container {
 			return;
 		}
 
+		const revealFx: SpineTimeline = this.symbol
+			.getSlotContainerByName("slotReveal")
+			.getChildByName("reveal");
+
+		const revealLoseText: TextField = revealFx
+			.getSlotContainerByName("textLose")
+			.getChildByName("text");
+
+		const revealWinText: TextField = revealFx
+			.getSlotContainerByName("textLose")
+			.getChildByName("text");
+
+		revealLoseText.text = this.amount.text;
+		revealWinText.text = this.amount.text;
+
 		this.emit("reveal", animated);
 
 		this._revealed = true;
@@ -103,14 +126,18 @@ export class RevealCell extends Container {
 
 		if (!animated) {
 			// TO BE COMPLETED: reveal cell WITHOUT animation
-			this.amount.visible = true;
+			// this.amount.visible = true;
+			revealFx.visible = true;
+			void revealFx.playDirect("reveal");
 
 			this.emit("revealed", false);
 			return;
 		}
 
 		// TO BE COMPLETED: reveal cell WITH animations
-		await utils.fadeIn(this.amount);
+		// await utils.fadeIn(this.amount);
+		revealFx.visible = true;
+		void revealFx.playDirect("reveal");
 
 		this.emit("revealed", true);
 	}
@@ -119,12 +146,29 @@ export class RevealCell extends Container {
 		if (this.winning || !this.revealed) {
 			return;
 		}
+
 		this._winning = true;
 
 		this.parent.addChild(this);
 
 		// TO BE COMPLETED: mark this cell as winning
 		await utils.sleep(0);
+	}
+
+	public loosingAnimation(): void {
+		const revealFx: SpineTimeline = this.symbol
+			.getSlotContainerByName("slotReveal")
+			.getChildByName("reveal");
+
+		void revealFx.playDirect("revealToLose");
+	}
+
+	public winningAnimation(): void {
+		const revealFx: SpineTimeline = this.symbol
+			.getSlotContainerByName("slotReveal")
+			.getChildByName("reveal");
+
+		void revealFx.playDirect("revealToWin");
 	}
 
 	public async enter(delay = 0): Promise<void> {
