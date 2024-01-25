@@ -1614,7 +1614,7 @@
 												"height": 457.20001220703125
 											},
 											"type": "spine.SpineTimeline",
-											"visible": true,
+											"visible": false,
 											"alpha": 1,
 											"worldAlpha": 1,
 											"buttonMode": false,
@@ -3711,7 +3711,7 @@
 												"height": 457.20001220703125
 											},
 											"type": "spine.SpineTimeline",
-											"visible": true,
+											"visible": false,
 											"alpha": 1,
 											"worldAlpha": 1,
 											"buttonMode": false,
@@ -5958,7 +5958,7 @@
 												"height": 457.20001220703125
 											},
 											"type": "spine.SpineTimeline",
-											"visible": true,
+											"visible": false,
 											"alpha": 1,
 											"worldAlpha": 1,
 											"buttonMode": false,
