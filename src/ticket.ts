@@ -43,7 +43,7 @@ export function parse(symbol: string): ITicketData {
 	// TO BE COMPLETED
 	return {
 		cells: parc[0].split(","),
-		cellsPositions: parc[1].split(",").map(Number),
+		cellsPositions: parc[1] === "" ? [] : parc[1].split(",").map(Number),
 	};
 }
 
