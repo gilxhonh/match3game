@@ -6,6 +6,7 @@ import type Game from "./index";
 export interface ITicketData {
 	// TO BE COMPLETED: data extracted from symbol
 	cells: string[];
+	cellsPositions?: number[];
 }
 
 export interface IRevelationData {
@@ -21,7 +22,7 @@ export class TicketError extends Error {
 }
 
 // TO BE COMPLETED: regexp used to parse symbol
-const SYMBOL_PATTERN = new RegExp("^" + "([AB],[AB],[AB])" + "$");
+const SYMBOL_PATTERN = new RegExp("^([AB],[AB],[AB]\\|([0-9]+,[0-9]+,[0-9]+)?)$");
 
 /**
  * parse given symbol and extract its information into an object
@@ -37,15 +38,19 @@ export function parse(symbol: string): ITicketData {
 		throw new TicketError(`cannot parse symbol "${symbol}": invalid format`);
 	}
 
+	const parc = match[1].split("|");
+
 	// TO BE COMPLETED
 	return {
-		cells: match[1].split(","),
+		cells: parc[0].split(","),
+		cellsPositions: parc[1].split(",").map(Number),
 	};
 }
 
 export class Ticket extends GamekitTicket<IRevelationData, Game> implements ITicketData {
 	// TO BE COMPLETED: ticket data are saved here and will be set by parse method
 	public readonly cells!: string[];
+	public readonly cellsPositions!: number[];
 
 	public constructor(ticket: IItgTicket, mode: ETicketMode, game: Game) {
 		super(ticket, mode, game);
