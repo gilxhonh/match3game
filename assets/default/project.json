@@ -1671,7 +1671,7 @@
 					"docking": {
 						"dock": "centerAll",
 						"x": 1.4331880734150992,
-						"y": 137.1336238531698,
+						"y": 138.55782413133392,
 						"cancelPivot": true
 					},
 					"type": "spine.SpineTimelineButton",
@@ -2451,6 +2451,29 @@
 																	"metadata": {},
 																	"children": []
 																}
+															},
+															{
+																"index": 24,
+																"serializationObject": {
+																	"name": "Container",
+																	"x": 0,
+																	"y": 0,
+																	"rotation": 0,
+																	"scaleX": 1,
+																	"scaleY": 1,
+																	"pivot": {
+																		"x": 0,
+																		"y": 0
+																	},
+																	"type": "Container",
+																	"visible": true,
+																	"alpha": 1,
+																	"worldAlpha": 1,
+																	"buttonMode": false,
+																	"interactive": false,
+																	"metadata": {},
+																	"children": []
+																}
 															}
 														]
 													},
@@ -3048,6 +3071,29 @@
 																	"metadata": {},
 																	"children": []
 																}
+															},
+															{
+																"index": 24,
+																"serializationObject": {
+																	"name": "Container",
+																	"x": 0,
+																	"y": 0,
+																	"rotation": 0,
+																	"scaleX": 1,
+																	"scaleY": 1,
+																	"pivot": {
+																		"x": 0,
+																		"y": 0
+																	},
+																	"type": "Container",
+																	"visible": true,
+																	"alpha": 1,
+																	"worldAlpha": 1,
+																	"buttonMode": false,
+																	"interactive": false,
+																	"metadata": {},
+																	"children": []
+																}
 															}
 														]
 													},
@@ -3072,8 +3118,8 @@
 											"index": 0,
 											"serializationObject": {
 												"name": "reveal",
-												"x": 0,
-												"y": 0,
+												"x": -10,
+												"y": -10,
 												"rotation": 0,
 												"scaleX": 1,
 												"scaleY": -1,
@@ -3086,7 +3132,7 @@
 													"height": 457.20001220703125
 												},
 												"type": "spine.SpineTimeline",
-												"visible": false,
+												"visible": true,
 												"alpha": 1,
 												"worldAlpha": 1,
 												"buttonMode": false,
@@ -3183,7 +3229,7 @@
 																	"styles": {
 																		"default": {
 																			"fontName": "RifficFree-Bold",
-																			"fontSize": 100,
+																			"fontSize": 80,
 																			"fill": "#000000",
 																			"stroke": "#003366",
 																			"strokeOffsetX": 0,
@@ -3258,7 +3304,7 @@
 																	"styles": {
 																		"default": {
 																			"fontName": "RifficFree-Bold",
-																			"fontSize": 100,
+																			"fontSize": 80,
 																			"fill": "#000000",
 																			"stroke": "#80401e",
 																			"strokeOffsetX": 0,
@@ -3498,7 +3544,7 @@
 								"cancelPivot": true
 							},
 							"type": "ui.TextField",
-							"visible": true,
+							"visible": false,
 							"alpha": 1,
 							"worldAlpha": 1,
 							"buttonMode": false,
@@ -4301,6 +4347,29 @@
 																	"metadata": {},
 																	"children": []
 																}
+															},
+															{
+																"index": 27,
+																"serializationObject": {
+																	"name": "Container",
+																	"x": 0,
+																	"y": 0,
+																	"rotation": 0,
+																	"scaleX": 1,
+																	"scaleY": 1,
+																	"pivot": {
+																		"x": 0,
+																		"y": 0
+																	},
+																	"type": "Container",
+																	"visible": true,
+																	"alpha": 1,
+																	"worldAlpha": 1,
+																	"buttonMode": false,
+																	"interactive": false,
+																	"metadata": {},
+																	"children": []
+																}
 															}
 														]
 													},
@@ -4967,6 +5036,29 @@
 																	"metadata": {},
 																	"children": []
 																}
+															},
+															{
+																"index": 27,
+																"serializationObject": {
+																	"name": "Container",
+																	"x": 0,
+																	"y": 0,
+																	"rotation": 0,
+																	"scaleX": 1,
+																	"scaleY": 1,
+																	"pivot": {
+																		"x": 0,
+																		"y": 0
+																	},
+																	"type": "Container",
+																	"visible": true,
+																	"alpha": 1,
+																	"worldAlpha": 1,
+																	"buttonMode": false,
+																	"interactive": false,
+																	"metadata": {},
+																	"children": []
+																}
 															}
 														]
 													},
@@ -4991,8 +5083,8 @@
 											"index": 0,
 											"serializationObject": {
 												"name": "reveal",
-												"x": 0,
-												"y": 0,
+												"x": -10,
+												"y": -10,
 												"rotation": 0,
 												"scaleX": 1,
 												"scaleY": -1,
@@ -5005,7 +5097,7 @@
 													"height": 457.20001220703125
 												},
 												"type": "spine.SpineTimeline",
-												"visible": false,
+												"visible": true,
 												"alpha": 1,
 												"worldAlpha": 1,
 												"buttonMode": false,
@@ -5102,7 +5194,7 @@
 																	"styles": {
 																		"default": {
 																			"fontName": "RifficFree-Bold",
-																			"fontSize": 100,
+																			"fontSize": 80,
 																			"fill": "#000000",
 																			"stroke": "#003366",
 																			"strokeOffsetX": 0,
@@ -5177,7 +5269,7 @@
 																	"styles": {
 																		"default": {
 																			"fontName": "RifficFree-Bold",
-																			"fontSize": 100,
+																			"fontSize": 80,
 																			"fill": "#000000",
 																			"stroke": "#80401e",
 																			"strokeOffsetX": 0,
@@ -5417,7 +5509,7 @@
 								"cancelPivot": true
 							},
 							"type": "ui.TextField",
-							"visible": true,
+							"visible": false,
 							"alpha": 1,
 							"worldAlpha": 1,
 							"buttonMode": false,
@@ -6289,6 +6381,29 @@
 																	"metadata": {},
 																	"children": []
 																}
+															},
+															{
+																"index": 30,
+																"serializationObject": {
+																	"name": "Container",
+																	"x": 0,
+																	"y": 0,
+																	"rotation": 0,
+																	"scaleX": 1,
+																	"scaleY": 1,
+																	"pivot": {
+																		"x": 0,
+																		"y": 0
+																	},
+																	"type": "Container",
+																	"visible": true,
+																	"alpha": 1,
+																	"worldAlpha": 1,
+																	"buttonMode": false,
+																	"interactive": false,
+																	"metadata": {},
+																	"children": []
+																}
 															}
 														]
 													},
@@ -7024,6 +7139,29 @@
 																	"metadata": {},
 																	"children": []
 																}
+															},
+															{
+																"index": 30,
+																"serializationObject": {
+																	"name": "Container",
+																	"x": 0,
+																	"y": 0,
+																	"rotation": 0,
+																	"scaleX": 1,
+																	"scaleY": 1,
+																	"pivot": {
+																		"x": 0,
+																		"y": 0
+																	},
+																	"type": "Container",
+																	"visible": true,
+																	"alpha": 1,
+																	"worldAlpha": 1,
+																	"buttonMode": false,
+																	"interactive": false,
+																	"metadata": {},
+																	"children": []
+																}
 															}
 														]
 													},
@@ -7048,8 +7186,8 @@
 											"index": 0,
 											"serializationObject": {
 												"name": "reveal",
-												"x": 0,
-												"y": 0,
+												"x": -10,
+												"y": -10,
 												"rotation": 0,
 												"scaleX": 1,
 												"scaleY": -1,
@@ -7062,7 +7200,7 @@
 													"height": 457.20001220703125
 												},
 												"type": "spine.SpineTimeline",
-												"visible": false,
+												"visible": true,
 												"alpha": 1,
 												"worldAlpha": 1,
 												"buttonMode": false,
@@ -7159,7 +7297,7 @@
 																	"styles": {
 																		"default": {
 																			"fontName": "RifficFree-Bold",
-																			"fontSize": 100,
+																			"fontSize": 80,
 																			"fill": "#000000",
 																			"stroke": "#003366",
 																			"strokeOffsetX": 0,
@@ -7234,7 +7372,7 @@
 																	"styles": {
 																		"default": {
 																			"fontName": "RifficFree-Bold",
-																			"fontSize": 100,
+																			"fontSize": 80,
 																			"fill": "#000000",
 																			"stroke": "#80401e",
 																			"strokeOffsetX": 0,
@@ -7474,7 +7612,7 @@
 								"cancelPivot": true
 							},
 							"type": "ui.TextField",
-							"visible": true,
+							"visible": false,
 							"alpha": 1,
 							"worldAlpha": 1,
 							"buttonMode": false,
