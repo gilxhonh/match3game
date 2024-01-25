@@ -116,6 +116,7 @@ export class RevealView extends LoadedView {
 
 		if (highlightedCells.length > 0) {
 			let lastWinningAnimation: void | Promise<void> = Promise.resolve();
+			await utils.sleep(300);
 			for (const highlightedCell of highlightedCells) {
 				lastWinningAnimation = highlightedCell.markAsWinning();
 				void highlightedCell.winningAnimation();

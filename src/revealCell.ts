@@ -160,7 +160,7 @@ export class RevealCell extends Container {
 			.getSlotContainerByName("slotReveal")
 			.getChildByName("reveal");
 
-		await revealFx.playDirect("revealToLose");
+		await revealFx.playDirect("revealToLose", false);
 	}
 
 	public async winningAnimation(): Promise<void> {
@@ -168,8 +168,8 @@ export class RevealCell extends Container {
 			.getSlotContainerByName("slotReveal")
 			.getChildByName("reveal");
 
-		await revealFx.playDirect("revealToWin");
-		await revealFx.playDirect("winExitFx");
+		await revealFx.playDirect("revealToWin", false);
+		await revealFx.playDirect("winExitFx", false);
 	}
 
 	public async enter(delay = 0): Promise<void> {
