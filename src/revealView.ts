@@ -98,8 +98,7 @@ export class RevealView extends LoadedView {
 		// is there any new winning cells ?
 		let highlightedCells: RevealCell[];
 
-		// TODO: retrieve winning cells from ticket & this.cells for example
-		const winningCells: RevealCell[] = [];
+		const winningCells: RevealCell[] = ticket.cellsPositions.map((i) => this.cells[i]);
 
 		if (winningCells.includes(revealedCell) && winningCells.every((c) => c.revealed)) {
 			highlightedCells = winningCells;
@@ -107,10 +106,19 @@ export class RevealView extends LoadedView {
 			highlightedCells = [];
 		}
 
+		if (this.cells.every((c) => c.revealed) && highlightedCells.length === 0) {
+			await utils.sleep(300);
+			for (const cell of this.cells) {
+				void cell.loosingAnimation();
+			}
+			await utils.sleep(600);
+		}
+
 		if (highlightedCells.length > 0) {
 			let lastWinningAnimation: void | Promise<void> = Promise.resolve();
 			for (const highlightedCell of highlightedCells) {
 				lastWinningAnimation = highlightedCell.markAsWinning();
+				void highlightedCell.winningAnimation();
 			}
 			await lastWinningAnimation;
 			await utils.sleep(600);

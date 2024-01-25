@@ -113,7 +113,7 @@ export class RevealCell extends Container {
 			.getChildByName("text");
 
 		const revealWinText: TextField = revealFx
-			.getSlotContainerByName("textLose")
+			.getSlotContainerByName("textWin")
 			.getChildByName("text");
 
 		revealLoseText.text = this.amount.text;
@@ -155,20 +155,21 @@ export class RevealCell extends Container {
 		await utils.sleep(0);
 	}
 
-	public loosingAnimation(): void {
+	public async loosingAnimation(): Promise<void> {
 		const revealFx: SpineTimeline = this.symbol
 			.getSlotContainerByName("slotReveal")
 			.getChildByName("reveal");
 
-		void revealFx.playDirect("revealToLose");
+		await revealFx.playDirect("revealToLose");
 	}
 
-	public winningAnimation(): void {
+	public async winningAnimation(): Promise<void> {
 		const revealFx: SpineTimeline = this.symbol
 			.getSlotContainerByName("slotReveal")
 			.getChildByName("reveal");
 
-		void revealFx.playDirect("revealToWin");
+		await revealFx.playDirect("revealToWin");
+		await revealFx.playDirect("winExitFx");
 	}
 
 	public async enter(delay = 0): Promise<void> {
