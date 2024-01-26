@@ -20,17 +20,19 @@ export function sleep(ms: number): Promise<void> {
 
 function scale(
 	target: DisplayObject,
-	targetScale: { x: number, y: number },
+	targetScale: { x: number; y: number },
 	duration: number,
-	delay: number  = 0
+	delay: number = 0
 ): Promise<void> {
 	return new Promise((resolve) => {
 		TweenMax.to(target.scale, 0.001 * duration, {
 			x: targetScale.x,
 			y: targetScale.y,
 			delay: delay * 0.001,
-			onStart: () => { target.visible = true; },
-			onComplete: resolve
+			onStart: () => {
+				target.visible = true;
+			},
+			onComplete: resolve,
 		});
 	});
 }
@@ -43,14 +45,13 @@ export async function scaleOut(target: DisplayObject, delay: number = 0): Promis
 export function scaleIn(
 	target: DisplayObject,
 	delay: number = 0,
-	targetScale?: { x: number, y: number }
+	targetScale?: { x: number; y: number }
 ): Promise<void> {
 	target.visible = false;
 
 	if (targetScale === undefined) {
-		targetScale = (target.scale.x === 0 || target.scale.y === 0)
-			? { x: 1, y: 1 }
-			: target.scale.clone();
+		targetScale =
+			target.scale.x === 0 || target.scale.y === 0 ? { x: 1, y: 1 } : target.scale.clone();
 	}
 
 	target.scale.set(0, 0);
@@ -63,13 +64,13 @@ function fade(
 	target: DisplayObject,
 	alpha: number,
 	duration: number,
-	delay: number  = 0
+	delay: number = 0
 ): Promise<void> {
 	return new Promise((resolve) => {
 		TweenMax.to(target, 0.001 * duration, {
 			alpha,
 			delay: delay * 0.001,
-			onComplete: resolve
+			onComplete: resolve,
 		});
 	});
 }

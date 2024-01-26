@@ -16,7 +16,6 @@ export class Rules extends Container {
 	@fromEditor("content.okButton")
 	protected okButton!: Button;
 
-
 	@fromEditor("content.slide*")
 	protected slides: Container[] = [];
 
@@ -47,9 +46,9 @@ export class Rules extends Container {
 	protected update(): void {
 		const slide = this.slides.find((slide) => slide.visible);
 
-		this.slides = this.children
-			.filter((child) => child instanceof Container
-				&& child.name?.startsWith("slide")) as Container[];
+		this.slides = this.children.filter(
+			(child) => child instanceof Container && child.name?.startsWith("slide")
+		) as Container[];
 
 		if (slide !== undefined) {
 			this.select(slide);
@@ -71,20 +70,20 @@ export class Rules extends Container {
 	}
 
 	public select(slide: Container | string) {
-		const _slide = slide instanceof Container
-			? slide
-			: this.slides.find((s) => s.name === slide);
+		const _slide = slide instanceof Container ? slide : this.slides.find((s) => s.name === slide);
 
 		if (slide === undefined) {
-			throw new Error(`RulesSlides: no slide named "${name}".`
-							+ ` Possible slide names: ${this.slides.map((s) => s.name)};`);
+			throw new Error(
+				`RulesSlides: no slide named "${name}".` +
+					` Possible slide names: ${this.slides.map((s) => s.name)};`
+			);
 		}
 
 		const slideIndex = this.slides.indexOf(_slide as Container);
 
-		this.nextButton.visible = slideIndex < (this.slides.length - 1);
+		this.nextButton.visible = slideIndex < this.slides.length - 1;
 		this.prevButton.visible = slideIndex > 0;
-		this.okButton.visible = slideIndex === (this.slides.length - 1);
+		this.okButton.visible = slideIndex === this.slides.length - 1;
 
 		for (const _slide of this.slides) {
 			_slide.visible = _slide === slide;
